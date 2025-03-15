@@ -40,9 +40,18 @@ public class LevelManager : MonoBehaviour
         {
             dateImage = GameObject.Find("Date Image").GetComponent<Image>();
         }
-
-
-
+        if (zombieFace == null)
+        {
+            zombieFace = GameObject.Find("Zombie Face").GetComponent<Image>();
+        }
+        if (dateDescription == null)
+        {
+            dateDescription = GameObject.Find("Date Text").GetComponent<TMP_Text>();
+        }
+        if (endButton == null)
+        {
+            endButton = GameObject.Find("Stop Button").GetComponent<Button>();
+        }
 
         cardSpawner = FindFirstObjectByType<CardSpawner>();
         cardSpawner.SpawnCards(events.Count());

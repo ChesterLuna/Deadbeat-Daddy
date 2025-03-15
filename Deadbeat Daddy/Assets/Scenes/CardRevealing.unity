@@ -377,6 +377,34 @@ PrefabInstance:
       propertyPath: m_Name
       value: GameManager
       objectReference: {fileID: 0}
+    - target: {fileID: 6334426525735436487, guid: 8d57564c01316de4ebe890575e5ef26c, type: 3}
+      propertyPath: nextEvents.Array.size
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6334426525735436487, guid: 8d57564c01316de4ebe890575e5ef26c, type: 3}
+      propertyPath: 'nextEvents.Array.data[0]'
+      value: 
+      objectReference: {fileID: 11400000, guid: 5b49d352b5f4ff546a8ae3505f1662e3, type: 2}
+    - target: {fileID: 6334426525735436487, guid: 8d57564c01316de4ebe890575e5ef26c, type: 3}
+      propertyPath: 'nextEvents.Array.data[1]'
+      value: 
+      objectReference: {fileID: 11400000, guid: dace8ddea4285b146afa89ca774d6881, type: 2}
+    - target: {fileID: 6334426525735436487, guid: 8d57564c01316de4ebe890575e5ef26c, type: 3}
+      propertyPath: 'nextEvents.Array.data[2]'
+      value: 
+      objectReference: {fileID: 11400000, guid: dace8ddea4285b146afa89ca774d6881, type: 2}
+    - target: {fileID: 6334426525735436487, guid: 8d57564c01316de4ebe890575e5ef26c, type: 3}
+      propertyPath: 'nextEvents.Array.data[3]'
+      value: 
+      objectReference: {fileID: 11400000, guid: 5b49d352b5f4ff546a8ae3505f1662e3, type: 2}
+    - target: {fileID: 6334426525735436487, guid: 8d57564c01316de4ebe890575e5ef26c, type: 3}
+      propertyPath: 'nextEvents.Array.data[4]'
+      value: 
+      objectReference: {fileID: 11400000, guid: dace8ddea4285b146afa89ca774d6881, type: 2}
+    - target: {fileID: 6334426525735436487, guid: 8d57564c01316de4ebe890575e5ef26c, type: 3}
+      propertyPath: 'nextEvents.Array.data[5]'
+      value: 
+      objectReference: {fileID: 11400000, guid: 5b49d352b5f4ff546a8ae3505f1662e3, type: 2}
     - target: {fileID: 8861791382162939401, guid: 8d57564c01316de4ebe890575e5ef26c, type: 3}
       propertyPath: m_LocalPosition.x
       value: 489.59537
