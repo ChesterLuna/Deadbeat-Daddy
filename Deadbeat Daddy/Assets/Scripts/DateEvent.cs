@@ -5,7 +5,7 @@ using UnityEngine;
 public class DateEvent : ScriptableObject
 {
     [SerializeField] public String eventName;
-    [SerializeField] public String description;
+    [TextArea(14, 13)] [SerializeField] public String description;
     [SerializeField] public Sprite icon;
     [SerializeField] public Sprite picture;
     [SerializeField] public int reward;
