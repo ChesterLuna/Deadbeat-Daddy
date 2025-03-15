@@ -1,4 +1,3 @@
-using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
@@ -31,7 +30,7 @@ public class LevelManager : MonoBehaviour
 
         // Randomize cards
         List<DateEvent> events = gameManager.GetEvents();
-        events.OrderBy(i => Guid.NewGuid()).ToList();
+        Shuffle(events);
         eventsToPlay = new Queue<DateEvent>(events);
 
 
@@ -79,4 +78,18 @@ public class LevelManager : MonoBehaviour
         gameManager.ClearEvents();
         gameManager.AddPoints(currentPoints);
     }
+
+    // Fisher Yates shuffle
+    public static void Shuffle<T>(IList<T> list)
+    {
+        int n = list.Count;
+        for (int i = 0; i < (n - 1); i++)
+        {
+            int r = i + Random.Range(0, n - i);
+            T t = list[r];
+            list[r] = list[i];
+            list[i] = t;
+        }
+    }
+
 }
