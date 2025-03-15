@@ -23,6 +23,8 @@ public class LevelManager : MonoBehaviour
 
     [SerializeField] TMP_Text scoreText = null;
 
+    [SerializeField] CardSpawner cardSpawner = null;
+
     void Start()
     {
         gameManager = GameManager.Instance;
@@ -38,6 +40,12 @@ public class LevelManager : MonoBehaviour
         {
             dateImage = GameObject.Find("Date Image").GetComponent<Image>();
         }
+
+
+
+
+        cardSpawner = FindFirstObjectByType<CardSpawner>();
+        cardSpawner.SpawnCards(events.Count());
     }
 
     public void DrawEvent()
