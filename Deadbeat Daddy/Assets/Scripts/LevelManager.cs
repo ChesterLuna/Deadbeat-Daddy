@@ -27,10 +27,17 @@ public class LevelManager : MonoBehaviour
     {
         gameManager = GameManager.Instance;
 
+        // Randomize cards
         List<DateEvent> events = gameManager.GetEvents();
         events.OrderBy(i => Guid.NewGuid()).ToList();
-        
         eventsToPlay = new Queue<DateEvent>(events);
+
+
+        // Get references
+        if(dateImage == null)
+        {
+            dateImage = GameObject.Find("Date Image").GetComponent<Image>();
+        }
     }
 
     public void DrawEvent()
