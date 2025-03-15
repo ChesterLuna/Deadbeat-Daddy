@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72ac17940fdf3264bb1215a5d108da21, type: 3}
+  m_Name: CreditEvent
+  m_EditorClassIdentifier: 
+  eventName: Credit Event
+  description: "You are about to pay for a fancy dinner, but your credit card keeps
+    declining. Guess undead credit doesn\u2019t work the same way in the living world.
+    Your date shyly pulls out their wallet.\r\n-8 love points."
+  icon: {fileID: 21300000, guid: 2edfd6cc2591c8846982a3efa8c428e4, type: 3}
+  picture: {fileID: -516963828392432434, guid: 8962be2174e285f428cdb0caa4552be0, type: 3}
+  zombieFace: {fileID: 21300000, guid: d23a90e99a3f73643bdf429955385696, type: 3}
+  reward: -8
