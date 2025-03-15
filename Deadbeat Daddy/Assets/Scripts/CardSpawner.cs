@@ -45,6 +45,7 @@ public class CardSpawner : MonoBehaviour
             {
                 nextPoint.position = startPoint.position;
             }
+            cardsDisplayed++;
         }
     }
 
@@ -53,5 +54,22 @@ public class CardSpawner : MonoBehaviour
         GameObject cardSpawned = Instantiate(cardObject, pos, Quaternion.identity, this.transform);
         cardSpawned.transform.Rotate(0f, 0f, rotation);
         cardSpawned.transform.SetAsLastSibling();
+    }
+
+    public void DeleteCard()
+    {
+        if(cardsDisplayed <=0)
+        {
+            print("Can't delete card because there are no more cards displayed");
+        }
+        GameObject lastCard = transform.GetChild(transform.childCount).gameObject;
+        Destroy(lastCard);
+        
+        cardsDisplayed--;
+        
+        if(cardsDisplayed == 0)
+        {
+            // Either change scene or prepare to change scene
+        }
     }
 }
