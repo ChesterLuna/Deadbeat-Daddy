@@ -370,37 +370,31 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3524378173045088088, guid: c1b4a15556034e2408508dfa46833fd4, type: 3}
+    - target: {fileID: 921734389079351115, guid: c1b4a15556034e2408508dfa46833fd4, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 1920
+      value: 1068.6677
       objectReference: {fileID: 0}
-    - target: {fileID: 3524378173045088088, guid: c1b4a15556034e2408508dfa46833fd4, type: 3}
+    - target: {fileID: 921734389079351115, guid: c1b4a15556034e2408508dfa46833fd4, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 1080
+      value: 149.0591
       objectReference: {fileID: 0}
-    - target: {fileID: 3524378173045088088, guid: c1b4a15556034e2408508dfa46833fd4, type: 3}
+    - target: {fileID: 921734389079351115, guid: c1b4a15556034e2408508dfa46833fd4, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: -0.0000076294
       objectReference: {fileID: 0}
-    - target: {fileID: 3524378173045088088, guid: c1b4a15556034e2408508dfa46833fd4, type: 3}
+    - target: {fileID: 921734389079351115, guid: c1b4a15556034e2408508dfa46833fd4, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -20.17
       objectReference: {fileID: 0}
     - target: {fileID: 4453925720205143601, guid: c1b4a15556034e2408508dfa46833fd4, type: 3}
       propertyPath: m_Name
       value: DateCanvas
       objectReference: {fileID: 0}
-    - target: {fileID: 4637388812973835010, guid: c1b4a15556034e2408508dfa46833fd4, type: 3}
-      propertyPath: m_Color.b
-      value: 0.5924529
-      objectReference: {fileID: 0}
-    - target: {fileID: 4637388812973835010, guid: c1b4a15556034e2408508dfa46833fd4, type: 3}
-      propertyPath: m_Color.g
-      value: 0.5924529
-      objectReference: {fileID: 0}
-    - target: {fileID: 4637388812973835010, guid: c1b4a15556034e2408508dfa46833fd4, type: 3}
-      propertyPath: m_Color.r
-      value: 0.5924529
+    - target: {fileID: 5508563388771904437, guid: c1b4a15556034e2408508dfa46833fd4, type: 3}
+      propertyPath: m_text
+      value: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque
+        id volutpat felis. Nulla sodales risus tempor, pulvinar risus quis, malesuada
+        tellus. '
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
