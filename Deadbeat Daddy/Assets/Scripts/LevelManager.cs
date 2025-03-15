@@ -44,9 +44,8 @@ public class LevelManager : MonoBehaviour
 
 
 
-
-        cardSpawner.SpawnCards(events.Count());
         cardSpawner = FindFirstObjectByType<CardSpawner>();
+        cardSpawner.SpawnCards(10);
     }
 
     public void DrawEvent()

@@ -5,6 +5,7 @@ public class CardSpawner : MonoBehaviour
     [SerializeField] GameObject cardObject;
     [SerializeField] RectTransform startPoint;
     [SerializeField] RectTransform endPoint;
+    [SerializeField] RectTransform nextPoint;
     [SerializeField] int nextCardMovement = 50;
 
     [SerializeField] int cardsDisplayed;
@@ -29,7 +30,7 @@ public class CardSpawner : MonoBehaviour
 
     public void SpawnCards(int n)
     {
-        RectTransform nextPoint = startPoint;
+        nextPoint.position = startPoint.position;
         for (int i = 0; i < n; i++)
         {
             int x_placement = Random.Range(-x_delta, x_delta);
@@ -42,7 +43,7 @@ public class CardSpawner : MonoBehaviour
 
             if(nextPoint.position.y <= endPoint.position.y)
             {
-                nextPoint = startPoint;
+                nextPoint.position = startPoint.position;
             }
         }
     }
@@ -51,5 +52,6 @@ public class CardSpawner : MonoBehaviour
     {
         GameObject cardSpawned = Instantiate(cardObject, pos, Quaternion.identity, this.transform);
         cardSpawned.transform.Rotate(0f, 0f, rotation);
+        cardSpawned.transform.SetAsLastSibling();
     }
 }
