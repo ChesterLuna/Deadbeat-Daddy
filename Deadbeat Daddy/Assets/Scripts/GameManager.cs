@@ -4,7 +4,7 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
 
-    GameManager Instance = null;
+    public static GameManager Instance;
 
     [SerializeField] public int lovePoints = 10;
     [SerializeField] public int winCondition = 69;
@@ -26,12 +26,12 @@ public class GameManager : MonoBehaviour
     }
 
 
-    void ClearEvents()
+    public void ClearEvents()
     {
         nextEvents.Clear();
     }
 
-    void AddEvents(List<DateEvent> events)
+    public void AddEvents(List<DateEvent> events)
     {
         nextEvents.AddRange(events);
     }
@@ -41,12 +41,12 @@ public class GameManager : MonoBehaviour
         nextEvents.Add(dateEvent);
     }
 
-    List<DateEvent> GetEvents()
+    public List<DateEvent> GetEvents()
     {
         return nextEvents;
     }
 
-    void AddPoints(int points)
+    public void AddPoints(int points)
     {
         lovePoints += points;
 
@@ -54,7 +54,7 @@ public class GameManager : MonoBehaviour
 
     }
 
-    bool CheckEndingCondition()
+    public bool CheckEndingCondition()
     {
         if (lovePoints >= winCondition || lovePoints <= 0)
         {
@@ -66,7 +66,7 @@ public class GameManager : MonoBehaviour
     }
 
 
-    bool CheckWinningCondition()
+    public bool CheckWinningCondition()
     {
         if (lovePoints >= winCondition)
         {
