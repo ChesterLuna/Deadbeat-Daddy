@@ -14,6 +14,7 @@ public class LevelManager : MonoBehaviour
 
     [Header("References")]
     [SerializeField] Image dateImage = null;
+    [SerializeField] Image cardImage = null;
     [SerializeField] Image zombieFace = null;
     [SerializeField] TMP_Text dateDescription = null;
 
@@ -35,22 +36,11 @@ public class LevelManager : MonoBehaviour
 
 
         // Get references
-        if(dateImage == null)
-        {
-            dateImage = GameObject.Find("Date Image").GetComponent<Image>();
-        }
-        if (zombieFace == null)
-        {
-            zombieFace = GameObject.Find("Zombie Face").GetComponent<Image>();
-        }
-        if (dateDescription == null)
-        {
-            dateDescription = GameObject.Find("Date Text").GetComponent<TMP_Text>();
-        }
-        if (endButton == null)
-        {
-            endButton = GameObject.Find("Stop Button").GetComponent<Button>();
-        }
+        if (dateImage == null) dateImage = GameObject.Find("Date Image").GetComponent<Image>();
+        if (cardImage == null) cardImage = GameObject.Find("Date Card Image").GetComponent<Image>();
+        if (zombieFace == null) zombieFace = GameObject.Find("Zombie Face").GetComponent<Image>();
+        if (dateDescription == null) dateDescription = GameObject.Find("Date Text").GetComponent<TMP_Text>();
+        if (endButton == null) endButton = GameObject.Find("Stop Button").GetComponent<Button>();
 
         cardSpawner = FindFirstObjectByType<CardSpawner>();
         cardSpawner.SpawnCards(events.Count());
@@ -68,8 +58,13 @@ public class LevelManager : MonoBehaviour
     public void PlayEvent(DateEvent nextEvent)
     {
         //Show Card, display assets
+        dateImage.sprite = nextEvent.picture;
+        zombieFace.sprite = nextEvent.zombieFace;
+        cardImage.sprite = nextEvent.icon;
         //Change text
+        dateDescription.text = nextEvent.description;
         //Add Points
+        currentPoints += nextEvent.reward;
     }
 
 
