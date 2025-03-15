@@ -1,7 +1,10 @@
 using UnityEngine;
+using UnityEngine.UI;
 
 public class CardSpawner : MonoBehaviour
 {
+    [SerializeField] LevelManager levelManager;
+
     [SerializeField] GameObject cardObject;
     [SerializeField] RectTransform startPoint;
     [SerializeField] RectTransform endPoint;
@@ -15,6 +18,8 @@ public class CardSpawner : MonoBehaviour
     [SerializeField] int y_delta = 1;
     [SerializeField] int rotation_delta = 1;
 
+    [SerializeField] Button drawButton;
+
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -26,6 +31,9 @@ public class CardSpawner : MonoBehaviour
 
         startPoint = GameObject.Find("Start Point").GetComponent<RectTransform>();
         endPoint = GameObject.Find("End Point").GetComponent<RectTransform>();
+
+        levelManager = FindFirstObjectByType<LevelManager>();
+        drawButton = GetComponent<Button>();
     }
 
     public void SpawnCards(int n)
@@ -54,22 +62,34 @@ public class CardSpawner : MonoBehaviour
         GameObject cardSpawned = Instantiate(cardObject, pos, Quaternion.identity, this.transform);
         cardSpawned.transform.Rotate(0f, 0f, rotation);
         cardSpawned.transform.SetAsLastSibling();
+        drawButton.targetGraphic = cardSpawned.GetComponent<Image>();
     }
 
-    public void DeleteCard()
+    public void DrawCard()
     {
-        if(cardsDisplayed <=0)
+        if (cardsDisplayed <= 0)
         {
-            print("Can't delete card because there are no more cards displayed");
+            print("Can't draw card because there are no more cards displayed");
         }
-        GameObject lastCard = transform.GetChild(transform.childCount).gameObject;
-        Destroy(lastCard);
-        
+
+        // Draw visual card (Delete gameobject)
+        GameObject lastCard = GetLastChild();
+        DestroyImmediate(lastCard);
         cardsDisplayed--;
-        
-        if(cardsDisplayed == 0)
+        if (cardsDisplayed == 0)
         {
             // Either change scene or prepare to change scene
         }
+        drawButton.targetGraphic = GetLastChild().GetComponent<Image>();
+
+        // Draw and play card
+        levelManager.DrawEvent();
+
+
+    }
+
+    private GameObject GetLastChild()
+    {
+        return transform.GetChild(transform.childCount - 1).gameObject;
     }
 }
