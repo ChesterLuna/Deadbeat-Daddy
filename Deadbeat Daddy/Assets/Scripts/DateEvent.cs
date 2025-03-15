@@ -8,5 +8,6 @@ public class DateEvent : ScriptableObject
     [TextArea(14, 13)] [SerializeField] public String description;
     [SerializeField] public Sprite icon;
     [SerializeField] public Sprite picture;
+    [SerializeField] public Sprite zombieFace;
     [SerializeField] public int reward;
 }

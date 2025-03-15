@@ -2,13 +2,26 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class LevelManager : MonoBehaviour
 {
     [SerializeField] int currentPoints = 0;
     GameManager gameManager = null;
     [SerializeField] Queue<DateEvent> eventsToPlay = new Queue<DateEvent>();
+
+
+    [Header("References")]
+    [SerializeField] Image dateImage = null;
+    [SerializeField] Image zombieFace = null;
+    [SerializeField] TMP_Text dateDescription = null;
+
+    [SerializeField] Button drawButton = null;
+    [SerializeField] Button endButton = null;
+
+    [SerializeField] TMP_Text scoreText = null;
 
     void Start()
     {
