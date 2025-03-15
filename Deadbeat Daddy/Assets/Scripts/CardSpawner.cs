@@ -4,7 +4,8 @@ public class CardSpawner : MonoBehaviour
 {
     [SerializeField] GameObject cardObject;
     [SerializeField] RectTransform startPoint;
-    [SerializeField] int nextCardMovement;
+    [SerializeField] RectTransform endPoint;
+    [SerializeField] int nextCardMovement = 50;
 
     [SerializeField] int cardsDisplayed;
     [SerializeField] int maximumCards;
@@ -12,6 +13,19 @@ public class CardSpawner : MonoBehaviour
     [SerializeField] int x_delta = 1;
     [SerializeField] int y_delta = 1;
     [SerializeField] int rotation_delta = 1;
+
+
+    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    void Start()
+    {
+        if (cardObject == null)
+        {
+            Debug.Log("The card prefab has not been set!");
+        }
+
+        startPoint = GameObject.Find("Start Point").GetComponent<RectTransform>();
+        endPoint = GameObject.Find("End Point").GetComponent<RectTransform>();
+    }
 
     public void SpawnCards(int n)
     {
@@ -23,29 +37,19 @@ public class CardSpawner : MonoBehaviour
             int rotation_placement = Random.Range(-rotation_delta, rotation_delta);
 
             Vector3 spawnPoint = nextPoint.position + new Vector3(x_placement, y_placement, 0);
-            SpawnCards(spawnPoint);
-            nextPoint
+            SpawnCards(spawnPoint, rotation_placement);
+            nextPoint.localPosition += new Vector3(0, -nextCardMovement,0);
+
+            if(nextPoint.position.y <= endPoint.position.y)
+            {
+                nextPoint = startPoint;
+            }
         }
     }
 
-    private void SpawnCards(Vector3 pos)
+    private void SpawnCards(Vector3 pos, int rotation)
     {
-        Instantiate(cardObject, pos, Quaternion.identity, this.transform);
-    }
-
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        if(cardObject == null)
-        {
-            Debug.Log("The card prefab has not been set!");
-        }
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        GameObject cardSpawned = Instantiate(cardObject, pos, Quaternion.identity, this.transform);
+        cardSpawned.transform.Rotate(0f, 0f, rotation);
     }
 }
