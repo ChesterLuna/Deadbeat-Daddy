@@ -427,6 +427,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1607706056664142105, guid: c1b4a15556034e2408508dfa46833fd4, type: 3}
+      propertyPath: nextCardMovement
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 4453925720205143601, guid: c1b4a15556034e2408508dfa46833fd4, type: 3}
       propertyPath: m_Name
       value: DateCanvas
