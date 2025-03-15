@@ -18,7 +18,6 @@ public class LevelManager : MonoBehaviour
     [SerializeField] Image zombieFace = null;
     [SerializeField] TMP_Text dateDescription = null;
 
-    [SerializeField] Button drawButton = null;
     [SerializeField] Button endButton = null;
 
     [SerializeField] TMP_Text scoreText = null;
@@ -41,6 +40,7 @@ public class LevelManager : MonoBehaviour
         if (zombieFace == null) zombieFace = GameObject.Find("Zombie Face").GetComponent<Image>();
         if (dateDescription == null) dateDescription = GameObject.Find("Date Text").GetComponent<TMP_Text>();
         if (endButton == null) endButton = GameObject.Find("Stop Button").GetComponent<Button>();
+        if (scoreText == null) scoreText = GameObject.Find("Score").GetComponent<TMP_Text>();
 
         cardSpawner = FindFirstObjectByType<CardSpawner>();
         cardSpawner.SpawnCards(events.Count());
@@ -64,9 +64,14 @@ public class LevelManager : MonoBehaviour
         //Change text
         dateDescription.text = nextEvent.description;
         //Add Points
-        currentPoints += nextEvent.reward;
+        AddCurrentPoints(nextEvent);
     }
 
+    private void AddCurrentPoints(DateEvent nextEvent)
+    {
+        currentPoints += nextEvent.reward;
+
+    }
 
     public void EndDate()
     {
