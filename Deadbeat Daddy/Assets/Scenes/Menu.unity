@@ -127,6 +127,22 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 234372368067314747, guid: d7619323de33ffb4c8584943db1634be, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 804.1964
+      objectReference: {fileID: 0}
+    - target: {fileID: 234372368067314747, guid: d7619323de33ffb4c8584943db1634be, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 120.0384
+      objectReference: {fileID: 0}
+    - target: {fileID: 234372368067314747, guid: d7619323de33ffb4c8584943db1634be, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0.0000038146973
+      objectReference: {fileID: 0}
+    - target: {fileID: 234372368067314747, guid: d7619323de33ffb4c8584943db1634be, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -0.00002861
+      objectReference: {fileID: 0}
     - target: {fileID: 701275456167191252, guid: d7619323de33ffb4c8584943db1634be, type: 3}
       propertyPath: m_Color.b
       value: 0.6901961
@@ -157,12 +173,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1924593645620715075, guid: d7619323de33ffb4c8584943db1634be, type: 3}
       propertyPath: m_text
-      value: START
+      value: Start
       objectReference: {fileID: 0}
     - target: {fileID: 1924593645620715075, guid: d7619323de33ffb4c8584943db1634be, type: 3}
       propertyPath: m_fontSize
       value: 40
       objectReference: {fileID: 0}
+    - target: {fileID: 1924593645620715075, guid: d7619323de33ffb4c8584943db1634be, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: f49ab45fba4db1742a20283e55dfcdc7, type: 2}
     - target: {fileID: 1924593645620715075, guid: d7619323de33ffb4c8584943db1634be, type: 3}
       propertyPath: m_fontStyle
       value: 1
@@ -170,6 +190,14 @@ PrefabInstance:
     - target: {fileID: 1924593645620715075, guid: d7619323de33ffb4c8584943db1634be, type: 3}
       propertyPath: m_fontSizeBase
       value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 1924593645620715075, guid: d7619323de33ffb4c8584943db1634be, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 6730482768583783367, guid: f49ab45fba4db1742a20283e55dfcdc7, type: 2}
+    - target: {fileID: 1924593645620715075, guid: d7619323de33ffb4c8584943db1634be, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2468784323853511273, guid: d7619323de33ffb4c8584943db1634be, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -186,6 +214,26 @@ PrefabInstance:
     - target: {fileID: 3859731169199357849, guid: d7619323de33ffb4c8584943db1634be, type: 3}
       propertyPath: m_text
       value: DEADBEAT DADDY
+      objectReference: {fileID: 0}
+    - target: {fileID: 3859731169199357849, guid: d7619323de33ffb4c8584943db1634be, type: 3}
+      propertyPath: m_fontSize
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 3859731169199357849, guid: d7619323de33ffb4c8584943db1634be, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: f49ab45fba4db1742a20283e55dfcdc7, type: 2}
+    - target: {fileID: 3859731169199357849, guid: d7619323de33ffb4c8584943db1634be, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 3859731169199357849, guid: d7619323de33ffb4c8584943db1634be, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 6730482768583783367, guid: f49ab45fba4db1742a20283e55dfcdc7, type: 2}
+    - target: {fileID: 3859731169199357849, guid: d7619323de33ffb4c8584943db1634be, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4453609201987788779, guid: d7619323de33ffb4c8584943db1634be, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
@@ -832,10 +880,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: CREDITS
+  m_text: Credits
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: f49ab45fba4db1742a20283e55dfcdc7, type: 2}
+  m_sharedMaterial: {fileID: 6730482768583783367, guid: f49ab45fba4db1742a20283e55dfcdc7, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
