@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 0d0a3c1fa1d195048a58e56fabd14a2c
+guid: 6c15ca0adb146424cb6bd43022fcb526
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7762051729366315519
-    second: crossing_road_pos_0
+      213: 2958190591604503922
+    second: mcbust_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -46,7 +46,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: crossing_road_pos_0
+      name: mcbust_0
       rect:
         serializedVersion: 2
-        x: 0
+        x: 22
         y: 0
-        width: 1280
-        height: 720
+        width: 366
+        height: 554
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ff1f5193ce858bb60800000000000000
-      internalID: 7762051729366315519
+      spriteID: 2753d7e7baa9d0920800000000000000
+      internalID: 2958190591604503922
       vertices: []
       indices: 
       edges: []
@@ -138,7 +138,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      crossing_road_pos_0: 7762051729366315519
+      mcbust_0: 2958190591604503922
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
