@@ -367,6 +367,14 @@ PrefabInstance:
       value: GameManager
       objectReference: {fileID: 0}
     - target: {fileID: 6334426525735436487, guid: 8d57564c01316de4ebe890575e5ef26c, type: 3}
+      propertyPath: winThreshold
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 6334426525735436487, guid: 8d57564c01316de4ebe890575e5ef26c, type: 3}
+      propertyPath: loseThreshold
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6334426525735436487, guid: 8d57564c01316de4ebe890575e5ef26c, type: 3}
       propertyPath: gifts.Array.size
       value: 6
       objectReference: {fileID: 0}
