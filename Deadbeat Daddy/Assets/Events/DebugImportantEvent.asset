@@ -13,10 +13,13 @@ MonoBehaviour:
   m_Name: DebugImportantEvent
   m_EditorClassIdentifier: 
   eventName: Default
-  description: YOU FORGOT TO ADD THE TEXT ASSET
+  description: "You go in for a hug and as your date comes in close, you get a whiff
+    of her hair. It smells like\u2026 strawberries? You can\u2019t resist the intrusive
+    thoughts and start nibbling on her head. She pushes you in shock. \r\n-5 love
+    points\r\n"
   icon: {fileID: 21300000, guid: dcb6bfd855a168641840b13576db4754, type: 3}
   picture: {fileID: -516963828392432434, guid: c4251f0e05a49ec4eb1ee559897f1d61, type: 3}
   zombieFace: {fileID: 21300000, guid: 3162bd861f4b6a34894c68a1288424d9, type: 3}
   reward: 0
   importantEvent: 1
-  dialogueFile: {fileID: 0}
+  dialogueFile: {fileID: 4900000, guid: 05fbb6f310e0eac48b5a713535c8a609, type: 3}

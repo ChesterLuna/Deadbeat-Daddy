@@ -33,12 +33,12 @@
 #Max
 :*looks in amazement* OMG YAY! AND POLAR BEAR!!!
 
-@R0
-@L0
+@R1
+@L1
 # 
 :The carnival game operator grabs the huge polar bear plushie and plops it into Max's arms. 
 
-@R0
-@L0
+@R1
+@L1
 # 
 :You can barely see her body as she hugs the plush toy, but you can tell by the way she's waddling while carrying it she is happily struggling. +10 love points
