@@ -47,6 +47,16 @@ MonoBehaviour:
   lovePoints: 10
   winCondition: 69
   endGame: 0
+  multiplier: 1
+  starEvents:
+  - {fileID: 11400000, guid: 5b49d352b5f4ff546a8ae3505f1662e3, type: 2}
+  - {fileID: 11400000, guid: dace8ddea4285b146afa89ca774d6881, type: 2}
+  moonEvents:
+  - {fileID: 11400000, guid: 5b49d352b5f4ff546a8ae3505f1662e3, type: 2}
+  - {fileID: 11400000, guid: dace8ddea4285b146afa89ca774d6881, type: 2}
+  sunEvents:
+  - {fileID: 11400000, guid: 5b49d352b5f4ff546a8ae3505f1662e3, type: 2}
+  - {fileID: 11400000, guid: dace8ddea4285b146afa89ca774d6881, type: 2}
   nextEvents: []
   gifts:
   - {fileID: 11400000, guid: e1d0a193c3e01464eb9939b6d5acd0c5, type: 2}
