@@ -116,6 +116,10 @@ public class LevelManager : MonoBehaviour
     {
         gameManager.ClearEvents();
         gameManager.AddPoints(currentPoints);
+
+        gameManager.nextGifts.Clear();
+        gameManager.chosenGifts.Clear();
+        gameManager.giftsChosen = false;
     }
 
     // Fisher Yates shuffle

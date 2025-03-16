@@ -18,6 +18,10 @@ public class GameManager : MonoBehaviour
     [SerializeField] List<DateEvent> nextEvents= new List<DateEvent>();
     [SerializeField] public List<Gift> gifts = new List<Gift>();
 
+    [SerializeField] public bool giftsChosen = false;
+    [SerializeField] public List<Gift> chosenGifts = new List<Gift>(); // The ones for the shop
+    [SerializeField] public List<Gift> nextGifts = new List<Gift>(); // The ones that were bought
+
     private void Awake()
     {
         // Make a singleton
