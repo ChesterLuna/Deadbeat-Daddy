@@ -10,9 +10,11 @@ public class GiftController : MonoBehaviour
     [SerializeField] private TMP_Text giftText;
     [SerializeField] private TMP_Text giftPrice;
     [SerializeField] private Gift currentGift;
+    Sprite transparentSprite;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        transparentSprite = GetComponent<Image>().sprite;
         giftText = transform.GetChild(0).GetComponent<TMP_Text>();
         giftImage = GetComponent<Image>();
         giftPrice = transform.GetChild(1).GetComponent<TMP_Text>();
@@ -45,7 +47,7 @@ public class GiftController : MonoBehaviour
             giftDescription = " ";
             giftText.text = " ";
 
-            giftImage.sprite = null;
+            giftImage.sprite = transparentSprite;
 
             giftPrice.text = " ";
 
