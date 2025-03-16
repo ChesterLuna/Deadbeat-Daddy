@@ -1,26 +1,39 @@
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlanningManager : MonoBehaviour
 {
 
     GameManager gameManager;
     CardSlotManager cardSlotManager;
+    // SceneLoader sceneLoader;
+    [SerializeField] Button dateButton;
 
+    [Header("Sprites")]
     [SerializeField] Sprite starSprite;
     [SerializeField] Sprite moonSprite;
     [SerializeField] Sprite sunSprite;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         gameManager = GameManager.Instance;
         cardSlotManager = FindFirstObjectByType<CardSlotManager>();
-    }
+        // if(!TryGetComponent<SceneLoader>(out sceneLoader))
+        // {
+        //     print("Scene Loader was not found");
+        // }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+        // gameManager.ClearEvents();
+
+        // Re add all events
+        foreach (var dateEvent in gameManager.GetEvents())
+        {
+            cardSlotManager.PlaceInNextSlot(dateEvent.icon);
+            dateButton.interactable = true;
+
+        }
     }
 
     public void BuyCard(string type)
@@ -48,27 +61,31 @@ public class PlanningManager : MonoBehaviour
             gameManager.lovePoints -= price;
             DrawFromPool(type);
 
-            Sprite spriteToPlace;
-            switch (type)
-            {
-                case "star":
-                    cardSlotManager.PlaceInNextSlot(starSprite);
-                    break;
-                case "moon":
-                    cardSlotManager.PlaceInNextSlot(moonSprite);
-                    break;
-                case "sun":
-                    cardSlotManager.PlaceInNextSlot(sunSprite);
-                    break;
-                default:
-                    cardSlotManager.PlaceInNextSlot(starSprite);
-                    print("Did not get correct place");
-                    break;
-            }
-            
+            PlaceNextCard(type);
 
         }
         //TODO play incorrect sound
+    }
+
+    private void PlaceNextCard(string type)
+    {
+        Sprite spriteToPlace;
+        switch (type)
+        {
+            case "star":
+                cardSlotManager.PlaceInNextSlot(starSprite);
+                break;
+            case "moon":
+                cardSlotManager.PlaceInNextSlot(moonSprite);
+                break;
+            case "sun":
+                cardSlotManager.PlaceInNextSlot(sunSprite);
+                break;
+            default:
+                cardSlotManager.PlaceInNextSlot(starSprite);
+                print("Did not get correct place");
+                break;
+        }
     }
 
     public void DrawFromPool(string poolType)
@@ -97,5 +114,14 @@ public class PlanningManager : MonoBehaviour
 
         gameManager.AddEvent(chosenEvent);
 
+        dateButton.interactable = true;
+
     }
+    
+
+    // public void StartDate()
+    // {
+    //     sceneLoader("");
+
+    // }
 }
