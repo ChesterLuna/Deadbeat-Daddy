@@ -28,7 +28,7 @@
 
 @R1
 #Max
-:Uh hi Daddy, this is my twin sister Amy…
+:Uh hi Daddy, this is my twin sister Amy...
 
 @L1
 #Daddy
@@ -37,7 +37,7 @@
 @R0
 @L1
 # 
-:You have never felt so dead in your life
+:You have never felt so dead in your life. -12 love points
 
 
 

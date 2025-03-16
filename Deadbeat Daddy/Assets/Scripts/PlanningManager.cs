@@ -56,7 +56,7 @@ public class PlanningManager : MonoBehaviour
                 break;
         }
 
-        if (gameManager.lovePoints >= price)
+        if (gameManager.lovePoints >= price && gameManager.GetEvents().Count < cardSlotManager.maximumSlots)
         {
             gameManager.lovePoints -= price;
             DrawFromPool(type);

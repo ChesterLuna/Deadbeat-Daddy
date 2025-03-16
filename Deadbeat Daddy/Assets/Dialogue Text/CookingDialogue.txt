@@ -1,0 +1,47 @@
+@R1
+@L1
+# 
+:You wanted to show how great a cook you are to Max, you can never go wrong with pasta!
+
+@L1
+#Daddy
+:Ok angel hair pasta, tomato sauce, meat balls, and parmesan to top it off. Oh! Looks like I have those ingredients, perfect!
+
+@R1
+@L1
+# 
+:Couple hours go by and you hear a doorbell, it's Max!
+
+@R1
+#Max
+:Hi Daddy! Oh. What is that smell?
+
+@L1
+#Daddy
+:I have a surprise for you!
+
+@R1
+#Max
+:*crinkling her nose* Uh alright...
+
+@L1
+#Daddy
+:Hope you're hungry! *You show her to the dining table with two plates of your creation*
+
+@R1
+#Max
+:*looks like she's about to flee* I- Uh... Think I lost my appetite- I mean my keys, yeah I gotta go look for that
+
+@R1
+@L1
+# 
+:Max leaves the place in a hurry with a pale face
+
+@L1
+#Daddy (to self)
+:What was wrong with... Oh.
+
+@R1
+@L1
+# 
+:The plate is filled with human hair, blood, and a sprinkle of dandruff. Well at least you got the meatballs right. But what meat did you use? -20 love points

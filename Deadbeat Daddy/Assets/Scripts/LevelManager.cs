@@ -12,6 +12,8 @@ public class LevelManager : MonoBehaviour
     [SerializeField] Queue<DateEvent> eventsToPlay = new Queue<DateEvent>();
     [SerializeField] DateEvent defaultEvent;
 
+    [SerializeField] List<int> pointsAdded = new List<int>();
+
 
     [Header("References")]
     [SerializeField] Image dateImage = null;
@@ -26,6 +28,8 @@ public class LevelManager : MonoBehaviour
     [SerializeField] CardSpawner cardSpawner = null;
 
     [SerializeField] DialogueManager dialogueManager = null;
+
+    [SerializeField] SceneLoader sceneLoader = null;
 
     void Start()
     {
@@ -45,9 +49,12 @@ public class LevelManager : MonoBehaviour
         if (endButton == null) endButton = GameObject.Find("Stop Button").GetComponent<Button>();
         if (scoreText == null) scoreText = GameObject.Find("Score").transform.GetChild(0).GetComponent<TMP_Text>();
         if (dialogueManager == null) dialogueManager = FindFirstObjectByType<DialogueManager>();
+        if (sceneLoader == null) sceneLoader = GetComponent<SceneLoader>();
 
         cardSpawner = FindFirstObjectByType<CardSpawner>();
         cardSpawner.SpawnCards(events.Count());
+        SetDefaultScreen();
+
     }
     void Update()
     {
@@ -81,12 +88,7 @@ public class LevelManager : MonoBehaviour
         if(nextEvent.importantEvent && nextEvent.dialogueFile != null)
         {
             dialogueManager.StartDialogue(nextEvent.dialogueFile.ToString());
-            //Show Card, display assets
-            dateImage.sprite = defaultEvent.picture;
-            zombieFace.sprite = defaultEvent.zombieFace;
-            cardImage.sprite = defaultEvent.icon;
-            //Change text
-            dateDescription.text = defaultEvent.description;
+            SetDefaultScreen();
         }
         else
         {
@@ -101,22 +103,64 @@ public class LevelManager : MonoBehaviour
         AddCurrentPoints(nextEvent);
     }
 
+    private void SetDefaultScreen()
+    {
+        //Show Card, display assets
+        dateImage.sprite = defaultEvent.picture;
+        zombieFace.sprite = defaultEvent.zombieFace;
+        cardImage.sprite = defaultEvent.icon;
+        //Change text
+        dateDescription.text = defaultEvent.description;
+    }
+
     private void AddCurrentPoints(DateEvent nextEvent)
     {
-        currentPoints += nextEvent.reward;
+        pointsAdded.Add(nextEvent.reward);
+        // currentPoints += nextEvent.reward;
 
     }
 
     public int GetCurrentPoints()
     {
-        return currentPoints * gameManager.multiplier;
+        currentPoints = 0;
+        foreach (int value in pointsAdded)
+        {
+            currentPoints += value;
+        }
+        currentPoints *= gameManager.multiplier;
+        return currentPoints;
     }
 
     public void EndDate()
     {
+        NextDay();
         gameManager.ClearEvents();
         gameManager.AddPoints(currentPoints);
 
+        ClearGifts();
+
+        bool isEnding = gameManager.CheckEndingCondition();
+
+        if(isEnding)
+        {
+            if(gameManager.CheckWinningCondition())
+            {
+                sceneLoader.LoadScene("WinningScene");
+            }
+            else
+            {
+                sceneLoader.LoadScene("LosingScene");
+
+            }
+        }
+        else
+        {
+            sceneLoader.LoadScene("DatePlanning");
+        }
+    }
+
+    private void ClearGifts()
+    {
         gameManager.nextGifts.Clear();
         gameManager.chosenGifts.Clear();
         gameManager.giftsChosen = false;
@@ -136,7 +180,7 @@ public class LevelManager : MonoBehaviour
     }
 
     // proceed to the next day
-    public void NextDay()
+    void NextDay()
     {
         gameManager.day++;
     }
