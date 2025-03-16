@@ -1,5 +1,5 @@
+using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Random;
 
 public class GiftController : MonoBehaviour
 {   
@@ -18,12 +18,10 @@ public class GiftController : MonoBehaviour
 
     void DrawGift()
     {   
-        private List<Gift> gifts = GameManager.Instance.gifts;
-        Random rand = new Random();
-        int index = rand.Next(0, gifts.Count);
+        List<Gift> gifts = GameManager.Instance.gifts;
+        int index = Random.Range(0, gifts.Count);
         Gift gift = gifts[index];
         string giftDescription = gifts[index].giftDescription;
-
         
 
     }
