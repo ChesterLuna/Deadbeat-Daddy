@@ -10,7 +10,7 @@
 @R1
 @L1
 # 
-:Couple hours go by and you hear a doorbell, it’s Max!
+:Couple hours go by and you hear a doorbell, it's Max!
 
 @R1
 #Max
@@ -26,11 +26,11 @@
 
 @L1
 #Daddy
-:Hope you’re hungry! *You show her to the dining table with two plates of your creation*
+:Hope you're hungry! *You show her to the dining table with two plates of your creation*
 
 @R1
 #Max
-:*looks like she’s about to flee* I- Uh… Think I lost my appetite- I mean my keys, yeah I gotta go look for that
+:*looks like she's about to flee* I- Uh... Think I lost my appetite- I mean my keys, yeah I gotta go look for that
 
 @R1
 @L1
@@ -39,9 +39,9 @@
 
 @L1
 #Daddy (to self)
-:What was wrong with… Oh.
+:What was wrong with... Oh.
 
 @R1
 @L1
 # 
-:The plate is filled with human hair, blood, and a sprinkle of dandruff. Well at least you got the meatballs right. But what meat did you use?
+:The plate is filled with human hair, blood, and a sprinkle of dandruff. Well at least you got the meatballs right. But what meat did you use? -20 love points
