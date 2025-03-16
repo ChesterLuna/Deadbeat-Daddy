@@ -19,15 +19,16 @@ public class PictureHandler : MonoBehaviour
     [SerializeField] GameObject picture2Displayed;
     [SerializeField] bool picture2Shown = false;
 
-    public void UpdatePortrait(int index)
+    public void UpdatePortrait1(int index)
     {
-        // Debug.Log("The index is");
-        // Debug.Log(index);
-        // Debug.Log(characterPortraits.Length);
-
         portrait1Stand.GetComponent<Image>().sprite = character1Portraits[index];
+    }
+
+    public void UpdatePortrait2(int index)
+    {
         portrait2Stand.GetComponent<Image>().sprite = character2Portraits[index];
     }
+
 
     // public void DisplayPicture()
     // {
