@@ -49,13 +49,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   character1Portraits:
   - {fileID: 21300000, guid: 65b111ad20521ba42869616ed0b32c0e, type: 3}
-  - {fileID: 21300000, guid: f6a605441a484b04eba440a25a89daf9, type: 3}
+  - {fileID: 21300000, guid: 6c15ca0adb146424cb6bd43022fcb526, type: 3}
   portrait1Stand: {fileID: 0}
   picture1Displayed: {fileID: 0}
   picture1Shown: 0
   character2Portraits:
   - {fileID: 21300000, guid: 65b111ad20521ba42869616ed0b32c0e, type: 3}
-  - {fileID: 21300000, guid: f6a605441a484b04eba440a25a89daf9, type: 3}
+  - {fileID: 21300000, guid: cf5a6e8c9e4ed3f4e945c902715b0a31, type: 3}
   portrait2Stand: {fileID: 0}
   picture2Displayed: {fileID: 0}
   picture2Shown: 0
@@ -86,8 +86,10 @@ MonoBehaviour:
   charNameText: {fileID: 0}
   dialogueText: {fileID: 0}
   fader: {fileID: 0}
+  fadeDuration: 1
   dialogueCanvas: {fileID: 0}
   textAnalyzer: {fileID: 6931805507894166927}
+  pictureHandler: {fileID: 0}
   finishedDialogue: 0
 --- !u!82 &5766998863800516545
 AudioSource:
