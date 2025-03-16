@@ -183,7 +183,7 @@ public class LevelManager : MonoBehaviour
     {
         NextDay();
         gameManager.ClearEvents();
-        gameManager.AddPoints(currentPoints);
+        gameManager.AddPoints(GetCurrentPoints());
 
         ClearGifts();
 
