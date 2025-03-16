@@ -237,6 +237,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Conv Canvas
       objectReference: {fileID: 0}
+    - target: {fileID: 8663434066606685671, guid: 312fcd3b8dbb5b145a23a9448bd30a73, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0.0022278
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
