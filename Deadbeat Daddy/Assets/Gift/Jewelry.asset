@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Jewelry
   m_EditorClassIdentifier: 
   giftDescription: Jewelry
-  icon: {fileID: 21300000, guid: 170cd52a437f987419e177147e6f3c2d, type: 3}
+  icon: {fileID: 21300000, guid: e6e15bd1decd1b34ba18af0033e02167, type: 3}
   price: 50
