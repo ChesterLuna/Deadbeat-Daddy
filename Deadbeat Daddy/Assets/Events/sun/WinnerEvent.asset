@@ -17,8 +17,10 @@ MonoBehaviour:
     carnival\u2019s milk bottle toss\r\nYou step up to the counter, grab a ball and
     lock in towards the center of the bottle stack.\r\nWinding up your arm, you breathe
     in and throw.\r\nPERFECT HIT! Your date looks at you with glee as you hand her
-    the soft plushie\r\n+10 love points\r\n"
+    the soft plushie\r\n+16 love points\r\n"
   icon: {fileID: 21300000, guid: 4095fbd4193cd4b458e19530fc50e785, type: 3}
   picture: {fileID: 0}
   zombieFace: {fileID: 21300000, guid: ce6a1181d6d0a9b46a137d10d3fac501, type: 3}
-  reward: 10
+  reward: 16
+  importantEvent: 0
+  dialogueFile: {fileID: 0}

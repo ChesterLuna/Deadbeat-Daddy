@@ -14,8 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   eventName: Zipliner
   description: "You ride the zipline. It is so fun that you can\u2019t stop doing
-    it!\r\nYour girlfriend has been waiting for 1 hour\u2026\r\n-4 love points\r\n"
+    it!\r\nYour girlfriend has been waiting for 1 hour\u2026\r\n-3 love points\r\n"
   icon: {fileID: 21300000, guid: 323e4a35028b4664988e36cd03a7b1c2, type: 3}
   picture: {fileID: 21300000, guid: 4b24facd8123460428c7e0a36771eb84, type: 3}
   zombieFace: {fileID: 21300000, guid: ce6a1181d6d0a9b46a137d10d3fac501, type: 3}
-  reward: -4
+  reward: -3
+  importantEvent: 0
+  dialogueFile: {fileID: 0}
