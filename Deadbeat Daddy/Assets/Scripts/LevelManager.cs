@@ -12,6 +12,8 @@ public class LevelManager : MonoBehaviour
     [SerializeField] Queue<DateEvent> eventsToPlay = new Queue<DateEvent>();
     [SerializeField] DateEvent defaultEvent;
 
+    [SerializeField] List<int> pointsAdded = new List<int>();
+
 
     [Header("References")]
     [SerializeField] Image dateImage = null;
@@ -113,13 +115,20 @@ public class LevelManager : MonoBehaviour
 
     private void AddCurrentPoints(DateEvent nextEvent)
     {
-        currentPoints += nextEvent.reward;
+        pointsAdded.Add(nextEvent.reward);
+        // currentPoints += nextEvent.reward;
 
     }
 
     public int GetCurrentPoints()
     {
-        return currentPoints * gameManager.multiplier;
+        currentPoints = 0;
+        foreach (int value in pointsAdded)
+        {
+            currentPoints += value;
+        }
+        currentPoints *= gameManager.multiplier;
+        return currentPoints;
     }
 
     public void EndDate()
