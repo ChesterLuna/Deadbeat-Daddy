@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class StartScene : MonoBehaviour
 {
-    public string firstScene;
     // Start is called before the first frame update
     void Start()
     {
@@ -17,8 +16,8 @@ public class StartScene : MonoBehaviour
         
     }
 
-    public void StartGame()
+    public void StartGame(string scene)
     {
-        UnityEngine.SceneManagement.SceneManager.LoadScene(firstScene);
+        UnityEngine.SceneManagement.SceneManager.LoadScene(scene);
     }
 }
