@@ -15,8 +15,8 @@ MonoBehaviour:
   eventName: Double Vision
   description: "You surprise your human girlfriend by pulling her for a kiss! The
     passion and love  blinds you from looking at an exact replica of her looking
-    at you from the side. \nYou just kissed her twin!\n-10 love points "
+    at you from the side. \nYou just kissed her twin!\n-12 love points "
   icon: {fileID: 21300000, guid: 4095fbd4193cd4b458e19530fc50e785, type: 3}
   picture: {fileID: 5396193120615799248, guid: 0ea5d2a88bc51b54bad076006ef9d716, type: 3}
   zombieFace: {fileID: 21300000, guid: 429fbbd3b2b261846bddb2e58e930659, type: 3}
-  reward: -10
+  reward: -12

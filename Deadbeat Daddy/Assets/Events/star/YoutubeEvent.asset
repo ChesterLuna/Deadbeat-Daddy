@@ -16,10 +16,10 @@ MonoBehaviour:
   description: 'You and your date are flipping through Youtube and discover you have
     the same favorite Youtuber! The vibes are vibing
 
-    +5 love points
+    +3 love points
 
 '
   icon: {fileID: 21300000, guid: 2edfd6cc2591c8846982a3efa8c428e4, type: 3}
   picture: {fileID: 0}
   zombieFace: {fileID: 21300000, guid: 6540ca8b58b35b84f9fd273a2ed5e65d, type: 3}
-  reward: 5
+  reward: 3

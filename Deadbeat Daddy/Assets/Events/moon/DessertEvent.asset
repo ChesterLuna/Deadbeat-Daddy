@@ -17,10 +17,10 @@ MonoBehaviour:
     She thought it was some sick zombie joke, but to her surprise it became her new
     favorite treat!
 
-    +4 love points
+    +5 love points
 
 '
   icon: {fileID: 21300000, guid: 2edfd6cc2591c8846982a3efa8c428e4, type: 3}
   picture: {fileID: 0}
   zombieFace: {fileID: 21300000, guid: f947a54b00e55d64a915e2d444a31c52, type: 3}
-  reward: 4
+  reward: 5
