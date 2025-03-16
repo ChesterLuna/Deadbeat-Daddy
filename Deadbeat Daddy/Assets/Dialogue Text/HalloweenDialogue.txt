@@ -1,0 +1,59 @@
+@R1
+@L1
+# 
+:You and your date go to yoru city's annual haunted house
+
+@L1
+#Daddy
+:Are you excited about the haunted house?
+
+@R1
+#Max
+:I’m not sure, I’ve never been in one before so I don’t know what to expect.
+
+@L2
+#Daddy
+:Don’t worry I’ll protect you no matter what comes our way!
+
+@R1
+@L1
+# 
+:We walk in the haunted house. After a couple rooms, you notice something odd
+
+@L1
+#Daddy (to self)
+:Hmm I don’t see many scare actors
+
+@R1
+@L1
+# 
+:a zombie actress in cowering in the corner as she sees you and Max walk by
+
+@R1
+#Max
+:Wait, are they scared of you?
+
+@L1
+#Daddy
+:What?
+
+@L1
+#Daddy
+:*looks around*
+
+@L1
+#Daddy
+:Oh hah I guess so
+
+@R1
+#Max
+: Haha *grabs your arm and smiles* 
+
+@R1
+#Max
+:Don’t worry you don’t scare me. You’re all mine
+
+@R1
+@L1
+# 
+:You both continue strolling along the house while the actors meakly pop up every so often

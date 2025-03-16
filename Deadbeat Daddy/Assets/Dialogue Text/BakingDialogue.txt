@@ -1,0 +1,32 @@
+@L1
+#Daddy
+:*Home alone thinking to yourself* Max is coming over in an hour, how should I surprise her?
+
+@L1
+#Daddy
+:*Looks at the kitchen* Oh yeah she loves butter cookies! That shouldn’t be too bad
+
+@R1
+@L1
+# 
+:An hour goes by and you hear the door bell, but there is flour all over the counter, egg shells on the floor, and a huge brick of butter in a measuring cup.
+
+@L1
+#Daddy
+:*shyly opens the door* Uhm. Hi I’m sorry I tried to make you some butter cookies-
+
+@R1
+#Max
+:You remembered my favorite cookies? Aw that’s so sweet. Here let me teach you my family’s recipe.
+
+@R1
+@L1
+# 
+:You and Max ended up having an impromptu baking date. 
+
+@R1
+@L1
+# 
+:Max teaches you new baking techniques and you finding ways to mess up so she can keep her attention on you.
+
+

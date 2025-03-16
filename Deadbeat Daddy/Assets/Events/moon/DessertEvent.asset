@@ -10,12 +10,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 72ac17940fdf3264bb1215a5d108da21, type: 3}
-  m_Name: GamerEvent
+  m_Name: DessertEvent
   m_EditorClassIdentifier: 
-  eventName: Who's Side Are You On?
-  description: "You both decide to play Plants vs Zombies, and she thinks it\u2019s
-    cute that you keep losing just to let the zombies win!\r\n+4 love points\r\n"
+  eventName: Yummy Worms
+  description: 'You take her to a dessert store and recommend the worms in dirt cup.
+    She thought it was some sick zombie joke, but to her surprise it became her new
+    favorite treat!
+
+    +5 love points
+
+'
   icon: {fileID: 21300000, guid: 2edfd6cc2591c8846982a3efa8c428e4, type: 3}
   picture: {fileID: 0}
   zombieFace: {fileID: 21300000, guid: f947a54b00e55d64a915e2d444a31c52, type: 3}
-  reward: 4
+  reward: 5
