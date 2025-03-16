@@ -15,7 +15,7 @@ MonoBehaviour:
   eventName: Who's Side Are You On?
   description: "You both decide to play Plants vs Zombies, and she thinks it\u2019s
     cute that you keep losing just to let the zombies win!\r\n+9 love points\r\n"
-  icon: {fileID: 21300000, guid: 323e4a35028b4664988e36cd03a7b1c2, type: 3}
+  icon: {fileID: 21300000, guid: 2edfd6cc2591c8846982a3efa8c428e4, type: 3}
   picture: {fileID: 0}
   zombieFace: {fileID: 21300000, guid: f947a54b00e55d64a915e2d444a31c52, type: 3}
   reward: 9
