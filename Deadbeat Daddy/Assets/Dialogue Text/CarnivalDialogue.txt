@@ -1,0 +1,44 @@
+@R1
+@L1
+# 
+:You and your date are exploring the local carnival
+
+@R0
+#Daddy
+:*sees a large polar bear plushie hanging above the milk bottle toss*
+
+@L1
+#Daddy (to self)
+:That is Max's favorite animal! This is my chance to show off!""
+
+@R1
+# 
+:We walk towards the carnival booth and I pay for a ball
+
+@R0
+@L1
+#Daddy
+:*breathes in* This is for you Max!
+
+@L1
+# 
+:You lock in your eyesight towards the center of the bottle stack and throw.
+
+@L1
+# 
+:PERFECT HIT!
+
+@R1
+@L0
+#Max
+:*looks in amazement* OMG YAY! AND POLAR BEAR!!!
+
+@R0
+@L0
+# 
+:The carnival game operator grabs the huge polar bear plushie and plops it into Max’s arms. 
+
+@R0
+@L0
+# 
+:You can barely see her body as she hugs the plush toy, but you can tell by the way she’s waddling while carrying it she is happily struggling
