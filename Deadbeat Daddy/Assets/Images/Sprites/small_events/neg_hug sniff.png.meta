@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 8962be2174e285f428cdb0caa4552be0
+guid: 3d754c955f7036e4090c6015f1662b65
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -516963828392432434
-    second: IMG_7416_0
+      213: -7219071774623316330
+    second: neg_hug sniff_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -96,30 +96,17 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: IMG_7416_0
+      name: neg_hug sniff_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 3024
-        height: 4032
+        width: 1280
+        height: 720
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ecc61f6132063d8f0800000000000000
-      internalID: -516963828392432434
+      spriteID: 69647812874b0db90800000000000000
+      internalID: -7219071774623316330
       vertices: []
       indices: 
       edges: []
@@ -147,8 +134,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      IMG_7416_0: -516963828392432434
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

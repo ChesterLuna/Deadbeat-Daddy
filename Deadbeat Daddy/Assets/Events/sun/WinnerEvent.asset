@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72ac17940fdf3264bb1215a5d108da21, type: 3}
+  m_Name: WinnerEvent
+  m_EditorClassIdentifier: 
+  eventName: Strong Boi
+  description: "You see a huge plushie of your date\u2019s favorite animal at the
+    carnival\u2019s milk bottle toss\r\nYou step up to the counter, grab a ball and
+    lock in towards the center of the bottle stack.\r\nWinding up your arm, you breathe
+    in and throw.\r\nPERFECT HIT! Your date looks at you with glee as you hand her
+    the soft plushie\r\n+10 love points\r\n"
+  icon: {fileID: 21300000, guid: 4095fbd4193cd4b458e19530fc50e785, type: 3}
+  picture: {fileID: 0}
+  zombieFace: {fileID: 21300000, guid: ce6a1181d6d0a9b46a137d10d3fac501, type: 3}
+  reward: 10
