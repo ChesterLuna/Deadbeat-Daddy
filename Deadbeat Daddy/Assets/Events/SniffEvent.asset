@@ -17,7 +17,7 @@ MonoBehaviour:
     of her hair. It smells like\u2026 strawberries? You can\u2019t resist the intrusive
     thoughts and start nibbling on her head. \r\nShe pushes you in shock. Not good
     for your image\r\n-5 love points\r\n"
-  icon: {fileID: 0}
+  icon: {fileID: 21300000, guid: 323e4a35028b4664988e36cd03a7b1c2, type: 3}
   picture: {fileID: 0}
-  zombieFace: {fileID: 0}
+  zombieFace: {fileID: 21300000, guid: 429fbbd3b2b261846bddb2e58e930659, type: 3}
   reward: -5

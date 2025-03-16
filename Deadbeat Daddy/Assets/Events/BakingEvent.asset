@@ -12,9 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 72ac17940fdf3264bb1215a5d108da21, type: 3}
   m_Name: BakingEvent
   m_EditorClassIdentifier: 
-  eventName: 
-  description: 
-  icon: {fileID: 0}
+  eventName: Made with Love
+  description: "You try making her favourite cookies while waiting for her to come
+    over, but she showed up early and caught you struggling to mix the dough. \r\nShe
+    finds the effort very thoughtful and beams with joy! \r\nThe next few hours were
+    spent cutely baking together\r\n+15 love points\r\n"
+  icon: {fileID: 21300000, guid: 4095fbd4193cd4b458e19530fc50e785, type: 3}
   picture: {fileID: 0}
-  zombieFace: {fileID: 0}
-  reward: 0
+  zombieFace: {fileID: 21300000, guid: f947a54b00e55d64a915e2d444a31c52, type: 3}
+  reward: 15

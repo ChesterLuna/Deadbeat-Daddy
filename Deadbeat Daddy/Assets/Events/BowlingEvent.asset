@@ -18,7 +18,7 @@ MonoBehaviour:
     you swing your bowling arm back, your rotting arm loses its integrity and snaps
     off with the bowling ball, flying towards your date.\r\nThat\u2019s gotta hurt\r\n-7
     love points\r\n"
-  icon: {fileID: 0}
+  icon: {fileID: 21300000, guid: 323e4a35028b4664988e36cd03a7b1c2, type: 3}
   picture: {fileID: 0}
-  zombieFace: {fileID: 0}
+  zombieFace: {fileID: 21300000, guid: 1cb7548f35bc7b44c934d1e95c676019, type: 3}
   reward: -7

@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: e78acb8526608594c90c6cc0799c00a6
+guid: a032d82b614b24e4384208d21f49cdef
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3125665987577397781
-    second: neg_bowling_date_0
+      213: 7397601439941983773
+    second: zipline_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,7 +100,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: neg_bowling_date_0
+      name: zipline_0
       rect:
         serializedVersion: 2
         x: 0
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: bedbde348576f94d0800000000000000
-      internalID: -3125665987577397781
+      spriteID: d1ef8a1c05f89a660800000000000000
+      internalID: 7397601439941983773
       vertices: []
       indices: 
       edges: []
@@ -134,8 +134,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      neg_bowling_date_0: -3125665987577397781
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -19,7 +19,7 @@ MonoBehaviour:
     but at least you got the meatballs right! Wait what kind of meat?\r\nShe holds
     in her vomit (scared that you would use it) and says she needs some air.\r\nIt\u2019s
     been a few hours, she\u2019s not coming back today\r\n-20 love points\r\n"
-  icon: {fileID: 0}
+  icon: {fileID: 21300000, guid: 4095fbd4193cd4b458e19530fc50e785, type: 3}
   picture: {fileID: 0}
-  zombieFace: {fileID: 0}
+  zombieFace: {fileID: 21300000, guid: 1cb7548f35bc7b44c934d1e95c676019, type: 3}
   reward: -20
