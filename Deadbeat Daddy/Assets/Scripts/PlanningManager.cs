@@ -5,10 +5,16 @@ public class PlanningManager : MonoBehaviour
 {
 
     GameManager gameManager;
+    CardSlotManager cardSlotManager;
+
+    [SerializeField] Sprite starSprite;
+    [SerializeField] Sprite moonSprite;
+    [SerializeField] Sprite sunSprite;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         gameManager = GameManager.Instance;
+        cardSlotManager = FindFirstObjectByType<CardSlotManager>();
     }
 
     // Update is called once per frame
@@ -41,6 +47,26 @@ public class PlanningManager : MonoBehaviour
         {
             gameManager.lovePoints -= price;
             DrawFromPool(type);
+
+            Sprite spriteToPlace;
+            switch (type)
+            {
+                case "star":
+                    cardSlotManager.PlaceInNextSlot(starSprite);
+                    break;
+                case "moon":
+                    cardSlotManager.PlaceInNextSlot(moonSprite);
+                    break;
+                case "sun":
+                    cardSlotManager.PlaceInNextSlot(sunSprite);
+                    break;
+                default:
+                    cardSlotManager.PlaceInNextSlot(starSprite);
+                    print("Did not get correct place");
+                    break;
+            }
+            
+
         }
         //TODO play incorrect sound
     }
