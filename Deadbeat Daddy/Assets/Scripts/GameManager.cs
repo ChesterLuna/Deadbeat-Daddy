@@ -11,6 +11,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] bool endGame;
 
     [SerializeField] List<DateEvent> nextEvents= new List<DateEvent>();
+    [SerializeField] public List<Gift> gifts = new List<Gift>();
 
     private void Awake()
     {
