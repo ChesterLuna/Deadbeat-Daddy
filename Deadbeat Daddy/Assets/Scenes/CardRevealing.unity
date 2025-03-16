@@ -149,6 +149,26 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 167615627206001438, guid: 312fcd3b8dbb5b145a23a9448bd30a73, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 27bc0a5140364d743b567ff5ae32c646, type: 3}
+    - target: {fileID: 167615627206001438, guid: 312fcd3b8dbb5b145a23a9448bd30a73, type: 3}
+      propertyPath: m_Color.a
+      value: 0.25490198
+      objectReference: {fileID: 0}
+    - target: {fileID: 167615627206001438, guid: 312fcd3b8dbb5b145a23a9448bd30a73, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 167615627206001438, guid: 312fcd3b8dbb5b145a23a9448bd30a73, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 167615627206001438, guid: 312fcd3b8dbb5b145a23a9448bd30a73, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2702663895192564578, guid: 312fcd3b8dbb5b145a23a9448bd30a73, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -236,6 +256,10 @@ PrefabInstance:
     - target: {fileID: 7018798762093713389, guid: 312fcd3b8dbb5b145a23a9448bd30a73, type: 3}
       propertyPath: m_Name
       value: Conv Canvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 7018798762093713389, guid: 312fcd3b8dbb5b145a23a9448bd30a73, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8663434066606685671, guid: 312fcd3b8dbb5b145a23a9448bd30a73, type: 3}
       propertyPath: m_AnchoredPosition.x
