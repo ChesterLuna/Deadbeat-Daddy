@@ -17,6 +17,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/GiftShop.unity
     guid: 2ab179f6f6be87b47aa03bdc3e186eb2
+  - enabled: 1
+    path: Assets/Scenes/DatePlanning.unity
+    guid: 2a77b14978cea314d80220275f8bb34d
+  - enabled: 1
+    path: Assets/Scenes/CardRevealing.unity
+    guid: 9733ed019711f2040b12494d2a9b20d6
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0
