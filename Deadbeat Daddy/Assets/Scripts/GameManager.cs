@@ -7,10 +7,12 @@ public class GameManager : MonoBehaviour
     public static GameManager Instance;
 
     [SerializeField] public int lovePoints = 10;
-    [SerializeField] public int winCondition = 69;
+    [SerializeField] public int winThreshold = 69;
+    [SerializeField] public int loseThreshold = 5;
     [SerializeField] bool endGame;
     [SerializeField] public int multiplier = 1;
     [SerializeField] public int day = 1;
+    [SerializeField] public int maximumDays = 5;
 
     [SerializeField] public List<DateEvent> starEvents= new List<DateEvent>();
     [SerializeField] public List<DateEvent> moonEvents= new List<DateEvent>();
@@ -68,7 +70,7 @@ public class GameManager : MonoBehaviour
 
     public bool CheckEndingCondition()
     {
-        if (lovePoints >= winCondition || lovePoints <= 0)
+        if (lovePoints >= winThreshold || lovePoints <= loseThreshold || day > maximumDays)
         {
             endGame = true;
             return true;
@@ -80,7 +82,7 @@ public class GameManager : MonoBehaviour
 
     public bool CheckWinningCondition()
     {
-        if (lovePoints >= winCondition)
+        if (lovePoints >= winThreshold)
         {
             endGame = true;
             return true;

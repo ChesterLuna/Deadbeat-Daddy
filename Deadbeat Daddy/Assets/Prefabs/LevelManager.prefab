@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6535159053037074679}
   - component: {fileID: 8060840309215508058}
+  - component: {fileID: 1896767332369948761}
   m_Layer: 0
   m_Name: LevelManager
   m_TagString: Untagged
@@ -54,3 +55,16 @@ MonoBehaviour:
   scoreText: {fileID: 0}
   cardSpawner: {fileID: 0}
   dialogueManager: {fileID: 0}
+  sceneLoader: {fileID: 1896767332369948761}
+--- !u!114 &1896767332369948761
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8882460633944780699}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ee3d85a5b92e99479062c4cbb5775a4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
