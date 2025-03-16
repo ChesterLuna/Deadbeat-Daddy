@@ -59,7 +59,6 @@ public class LevelManager : MonoBehaviour
     void Update()
     {
         // TODO change it to only run when changed.
-        UpdateScore();
     }
 
     private void UpdateScore()
@@ -101,6 +100,7 @@ public class LevelManager : MonoBehaviour
         }
         //Add Points
         AddCurrentPoints(nextEvent);
+        UpdateScore();
     }
 
     private void SetDefaultScreen()
@@ -164,6 +164,8 @@ public class LevelManager : MonoBehaviour
         gameManager.nextGifts.Clear();
         gameManager.chosenGifts.Clear();
         gameManager.giftsChosen = false;
+        gameManager.multiplier = 1;
+
     }
 
     // Fisher Yates shuffle
@@ -178,6 +180,22 @@ public class LevelManager : MonoBehaviour
             list[i] = t;
         }
     }
+
+    // Search if the given gift exists
+
+    public bool GiftExists(Gift gift)
+    {
+        foreach (Gift currentGift in gameManager.nextGifts)
+        {
+            if(currentGift.name == gift.name)
+            {
+                return true;
+            }
+        }
+        return false;
+    }
+
+
 
     // proceed to the next day
     void NextDay()

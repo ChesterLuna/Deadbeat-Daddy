@@ -257,6 +257,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &343678315 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3038310695820384627, guid: c1b4a15556034e2408508dfa46833fd4, type: 3}
+  m_PrefabInstance: {fileID: 1350534995}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &502827403 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7018798762093713389, guid: 312fcd3b8dbb5b145a23a9448bd30a73, type: 3}
@@ -773,6 +784,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: DateCanvas
       objectReference: {fileID: 0}
+    - target: {fileID: 4884275658875482698, guid: c1b4a15556034e2408508dfa46833fd4, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6302210257018423928, guid: c1b4a15556034e2408508dfa46833fd4, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -842,6 +857,10 @@ PrefabInstance:
       propertyPath: endButton
       value: 
       objectReference: {fileID: 1673847912}
+    - target: {fileID: 8060840309215508058, guid: 80311b005ba7be541862f27cee25b323, type: 3}
+      propertyPath: scoreText
+      value: 
+      objectReference: {fileID: 343678315}
     - target: {fileID: 8060840309215508058, guid: 80311b005ba7be541862f27cee25b323, type: 3}
       propertyPath: zombieFace
       value: 
