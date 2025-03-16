@@ -10,6 +10,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] public int winCondition = 69;
     [SerializeField] bool endGame;
     [SerializeField] public int multiplier = 1;
+    [SerializeField] public int day = 1;
 
     [SerializeField] public List<DateEvent> starEvents= new List<DateEvent>();
     [SerializeField] public List<DateEvent> moonEvents= new List<DateEvent>();
@@ -17,6 +18,10 @@ public class GameManager : MonoBehaviour
 
     [SerializeField] List<DateEvent> nextEvents= new List<DateEvent>();
     [SerializeField] public List<Gift> gifts = new List<Gift>();
+
+    [SerializeField] public bool giftsChosen = false;
+    [SerializeField] public List<Gift> chosenGifts = new List<Gift>(); // The ones for the shop
+    [SerializeField] public List<Gift> nextGifts = new List<Gift>(); // The ones that were bought
 
     private void Awake()
     {

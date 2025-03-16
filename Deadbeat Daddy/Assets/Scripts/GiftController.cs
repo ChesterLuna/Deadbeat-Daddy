@@ -5,10 +5,10 @@ using UnityEngine.UI;
 
 public class GiftController : MonoBehaviour
 {   
-    private string giftDescription;
-    private Image giftImage;
-    private TMP_Text giftText;
-    private TMP_Text giftPrice;
+    [SerializeField] private string giftDescription;
+    [SerializeField] private Image giftImage;
+    [SerializeField] private TMP_Text giftText;
+    [SerializeField] private TMP_Text giftPrice;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -16,23 +16,10 @@ public class GiftController : MonoBehaviour
         giftImage = GetComponent<Image>();
         giftPrice = transform.GetChild(1).GetComponent<TMP_Text>();
 
-        DrawGift();
-        Debug.Log("Grabing Gift Description: " + giftDescription);
     }
 
-    // Update is called once per frame
-    void Update()
+    public void PlaceGift(Gift randomGift)
     {
-        
-    }
-
-    void DrawGift()
-    {
-        Debug.Log("Drawing gift...");
-        List<Gift> gifts = GameManager.Instance.gifts;
-        int randomIndex = Random.Range(0, gifts.Count);
-        Debug.Log("Random count: " + gifts.Count);
-        Gift randomGift = gifts[randomIndex];
         giftDescription = randomGift.giftDescription;
         giftText.text = giftDescription;
 
@@ -41,6 +28,7 @@ public class GiftController : MonoBehaviour
         giftPrice.text = "$ " + randomGift.price.ToString();
 
         Debug.Log("Gift drawn: " + giftDescription);
+
     }
     // void DisplayDiscription();
 }

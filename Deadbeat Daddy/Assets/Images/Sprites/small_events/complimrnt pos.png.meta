@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: dac9e80da9381264f9b8e807f0e9e60f
+guid: abd41e141af684247b36eb88c8a17aa0
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -5324510306585534209
-    second: pos_growl_0
+      213: 8172609627273950450
+    second: complimrnt pos_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,7 +113,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: pos_growl_0
+      name: complimrnt pos_0
       rect:
         serializedVersion: 2
         x: 0
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ff0201d261a8b16b0800000000000000
-      internalID: -5324510306585534209
+      spriteID: 2f4f999d721fa6170800000000000000
+      internalID: 8172609627273950450
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      pos_growl_0: -5324510306585534209
+      complimrnt pos_0: 8172609627273950450
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
