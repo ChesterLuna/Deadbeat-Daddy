@@ -46,11 +46,12 @@ public class DialogueManager : MonoBehaviour
 
     public void StartDialogue(string text)
     {
-        dialogueCanvas.SetActive(true);
         //         fader.GetComponent<Image>().color =
         // new Color(fader.GetComponent<Image>().color.r, fader.GetComponent<Image>().color.g, fader.GetComponent<Image>().color.b, 0);
 
         // StartCoroutine(StartFadeIn(fader, fadeDuration, 255));
+        names.Clear();
+        dialogues.Clear();
 
         textAnalyzer.AnalyzeText(text);
 
@@ -60,6 +61,8 @@ public class DialogueManager : MonoBehaviour
 
             DisplayNextSentence();
         }
+        dialogueCanvas.SetActive(true);
+
     }
 
     public void DisplayNextSentence()
