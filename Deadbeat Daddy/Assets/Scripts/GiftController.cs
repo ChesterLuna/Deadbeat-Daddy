@@ -31,6 +31,7 @@ public class GiftController : MonoBehaviour
         Debug.Log("Drawing gift...");
         List<Gift> gifts = GameManager.Instance.gifts;
         int randomIndex = Random.Range(0, gifts.Count);
+        Debug.Log("Random count: " + gifts.Count);
         Gift randomGift = gifts[randomIndex];
         giftDescription = randomGift.giftDescription;
         giftText.text = giftDescription;
