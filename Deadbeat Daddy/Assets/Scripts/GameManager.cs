@@ -11,6 +11,10 @@ public class GameManager : MonoBehaviour
     [SerializeField] bool endGame;
     [SerializeField] public int multiplier = 1;
 
+    [SerializeField] public List<DateEvent> starEvents= new List<DateEvent>();
+    [SerializeField] public List<DateEvent> moonEvents= new List<DateEvent>();
+    [SerializeField] public List<DateEvent> sunEvents= new List<DateEvent>();
+
     [SerializeField] List<DateEvent> nextEvents= new List<DateEvent>();
     [SerializeField] public List<Gift> gifts = new List<Gift>();
 
@@ -24,6 +28,7 @@ public class GameManager : MonoBehaviour
         else
         {
             Instance = this;
+            DontDestroyOnLoad(this);
         }
     }
 
@@ -38,7 +43,7 @@ public class GameManager : MonoBehaviour
         nextEvents.AddRange(events);
     }
 
-    void AddEvent(DateEvent dateEvent)
+    public void AddEvent(DateEvent dateEvent)
     {
         nextEvents.Add(dateEvent);
     }

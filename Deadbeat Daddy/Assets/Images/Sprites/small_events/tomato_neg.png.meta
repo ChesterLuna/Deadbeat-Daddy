@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 4b24facd8123460428c7e0a36771eb84
+guid: 5f9e915c007aa8f4f969ef739d6fed41
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7397601439941983773
-    second: zipline_0
+      213: -2647671734283256929
+    second: tomato_neg_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,7 +113,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: zipline_0
+      name: tomato_neg_0
       rect:
         serializedVersion: 2
         x: 0
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d1ef8a1c05f89a660800000000000000
-      internalID: 7397601439941983773
+      spriteID: f9b343ce594914bd0800000000000000
+      internalID: -2647671734283256929
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      zipline_0: 7397601439941983773
+      tomato_neg_0: -2647671734283256929
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
