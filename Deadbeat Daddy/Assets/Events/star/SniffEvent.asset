@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72ac17940fdf3264bb1215a5d108da21, type: 3}
+  m_Name: SniffEvent
+  m_EditorClassIdentifier: 
+  eventName: Yummy Hair
+  description: "You go in for a hug and as your date comes in close, you get a whiff
+    of her hair. It smells like\u2026 strawberries? You can\u2019t resist the intrusive
+    thoughts and start nibbling on her head. \r\nShe pushes you in shock. Not good
+    for your image\r\n-2 love points\r\n"
+  icon: {fileID: 21300000, guid: 323e4a35028b4664988e36cd03a7b1c2, type: 3}
+  picture: {fileID: 21300000, guid: 160c2aa58e2877d469eba199c9f7b966, type: 3}
+  zombieFace: {fileID: 21300000, guid: 429fbbd3b2b261846bddb2e58e930659, type: 3}
+  reward: -2
+  importantEvent: 0
+  dialogueFile: {fileID: 0}

@@ -1,0 +1,44 @@
+@R0
+@L1
+# 
+:You are walking around the mall and notice that Max is in line to get some candy at the candy store. 
+
+@R0
+@L1
+# 
+:You sneak over behind her and wanting to pull a surprise romantic gesture, you grab her by the arm to spin her around to face you and smooch her! 
+
+@R0
+@L1
+# 
+:You notice her frozen in shock and hear a distant but familiar voice
+
+@L0
+@R1
+#Max
+:DADDY?! AMY?
+
+@L1
+#Daddy
+:*looks at the girl in front of you and the girl in the distance* MAX? WAIT. WHAT?
+
+@R1
+@L1
+# 
+:Max walks towards you and this Max clone, clearly shaken
+
+@R1
+#Max
+:Uh hi Daddy, this is my twin sister Amy...
+
+@L1
+#Daddy
+:TWIN
+
+@R0
+@L1
+# 
+:You have never felt so dead in your life. -12 love points
+
+
+

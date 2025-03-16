@@ -6,7 +6,7 @@ public class CardSlotManager : MonoBehaviour
 {
     [SerializeField] List<Image> slots = new List<Image>();
     [SerializeField] int nextSlotInd = 0;
-    [SerializeField] int maximumSlots = 0;
+    [SerializeField] public int maximumSlots = 0;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {

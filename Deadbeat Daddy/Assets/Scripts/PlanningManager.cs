@@ -42,13 +42,13 @@ public class PlanningManager : MonoBehaviour
         switch (type)
         {
             case "star":
-                price = 3;
+                price = 1;
                 break;
             case "moon":
                 price = 3;
                 break;
             case "sun":
-                price = 3;
+                price = 10;
                 break;
             default:
                 price = 3;
@@ -56,7 +56,7 @@ public class PlanningManager : MonoBehaviour
                 break;
         }
 
-        if (gameManager.lovePoints >= price)
+        if (gameManager.lovePoints >= price && gameManager.GetEvents().Count < cardSlotManager.maximumSlots)
         {
             gameManager.lovePoints -= price;
             DrawFromPool(type);

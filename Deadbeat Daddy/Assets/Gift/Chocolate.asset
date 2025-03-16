@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a055466acb7c2e41ad22ce78fea4f2d, type: 3}
   m_Name: Chocolate
   m_EditorClassIdentifier: 
-  giftDescription: Chocolate
-  icon: {fileID: 21300000, guid: 170cd52a437f987419e177147e6f3c2d, type: 3}
+  giftDescription: Chocolate (1.5x Multiplier)
+  icon: {fileID: 21300000, guid: 240dfc8701b0fef4daead5b09dde0528, type: 3}
   price: 20

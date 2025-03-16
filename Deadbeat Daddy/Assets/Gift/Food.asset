@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a055466acb7c2e41ad22ce78fea4f2d, type: 3}
   m_Name: Food
   m_EditorClassIdentifier: 
-  giftDescription: Food
-  icon: {fileID: 21300000, guid: 170cd52a437f987419e177147e6f3c2d, type: 3}
+  giftDescription: Food (2x Top Positive Card)
+  icon: {fileID: 21300000, guid: d7be33fc00b6152499a6c20a58952a94, type: 3}
   price: 20

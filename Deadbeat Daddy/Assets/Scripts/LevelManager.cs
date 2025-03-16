@@ -12,6 +12,8 @@ public class LevelManager : MonoBehaviour
     [SerializeField] Queue<DateEvent> eventsToPlay = new Queue<DateEvent>();
     [SerializeField] DateEvent defaultEvent;
 
+    [SerializeField] List<int> pointsAdded = new List<int>();
+
 
     [Header("References")]
     [SerializeField] Image dateImage = null;
@@ -26,6 +28,8 @@ public class LevelManager : MonoBehaviour
     [SerializeField] CardSpawner cardSpawner = null;
 
     [SerializeField] DialogueManager dialogueManager = null;
+
+    [SerializeField] SceneLoader sceneLoader = null;
 
     void Start()
     {
@@ -43,11 +47,14 @@ public class LevelManager : MonoBehaviour
         if (zombieFace == null) zombieFace = GameObject.Find("Zombie Face").GetComponent<Image>();
         if (dateDescription == null) dateDescription = GameObject.Find("Date Text").GetComponent<TMP_Text>();
         if (endButton == null) endButton = GameObject.Find("Stop Button").GetComponent<Button>();
-        if (scoreText == null) scoreText = GameObject.Find("Score").GetComponent<TMP_Text>();
+        if (scoreText == null) scoreText = GameObject.Find("Score").transform.GetChild(0).GetComponent<TMP_Text>();
         if (dialogueManager == null) dialogueManager = FindFirstObjectByType<DialogueManager>();
+        if (sceneLoader == null) sceneLoader = GetComponent<SceneLoader>();
 
         cardSpawner = FindFirstObjectByType<CardSpawner>();
         cardSpawner.SpawnCards(events.Count());
+        SetDefaultScreen();
+
     }
     void Update()
     {
@@ -81,12 +88,7 @@ public class LevelManager : MonoBehaviour
         if(nextEvent.importantEvent && nextEvent.dialogueFile != null)
         {
             dialogueManager.StartDialogue(nextEvent.dialogueFile.ToString());
-            //Show Card, display assets
-            dateImage.sprite = defaultEvent.picture;
-            zombieFace.sprite = defaultEvent.zombieFace;
-            cardImage.sprite = defaultEvent.icon;
-            //Change text
-            dateDescription.text = defaultEvent.description;
+            SetDefaultScreen();
         }
         else
         {
@@ -101,22 +103,112 @@ public class LevelManager : MonoBehaviour
         AddCurrentPoints(nextEvent);
     }
 
+    private void SetDefaultScreen()
+    {
+        //Show Card, display assets
+        dateImage.sprite = defaultEvent.picture;
+        zombieFace.sprite = defaultEvent.zombieFace;
+        cardImage.sprite = defaultEvent.icon;
+        //Change text
+        dateDescription.text = defaultEvent.description;
+    }
+
     private void AddCurrentPoints(DateEvent nextEvent)
     {
-        currentPoints += nextEvent.reward;
+        pointsAdded.Add(nextEvent.reward);
+        // currentPoints += nextEvent.reward;
 
     }
 
+
     public int GetCurrentPoints()
     {
-        return currentPoints * gameManager.multiplier;
+        float multiplier = 1;
+        List<int> modifiedPointsAdded = new List<int>(pointsAdded); // pointsAdded is a list of each card's reward
+        modifiedPointsAdded.Sort();
+
+        foreach (Gift thegift in gameManager.chosenGifts)
+        {
+            string gift = thegift.name;
+            if (gift == "Flowers") // remove highest negative card done
+            {
+                int smallestNumber = modifiedPointsAdded[0];
+                if (smallestNumber < 0)
+                {
+                    modifiedPointsAdded.RemoveAt(0);
+                }
+            }
+            else if (gift == "Chocolate") // 1.5x multiplier done
+            {
+                multiplier *= 1.5f;
+            }
+            else if (gift == "Food") //multiply top card by 2
+            {
+                int biggestNumber = modifiedPointsAdded[modifiedPointsAdded.Count - 1];
+                if (biggestNumber > 0)
+                {
+                    modifiedPointsAdded[modifiedPointsAdded.Count - 1] = biggestNumber * 2;
+                }
+            }
+            else if (gift == "Macaroni") //remove lowest neg card /////
+            {
+                for (int i = modifiedPointsAdded.Count; i >= modifiedPointsAdded.Count; i--)
+                {
+                    int currentReward = modifiedPointsAdded[i];
+                    if (currentReward < 0)
+                    {
+                        modifiedPointsAdded.RemoveAt(i);
+                        break;
+                    }
+                }
+            }
+            else if (gift == "Poetry")
+            { // divides highestneg card by 2 done
+                int smallestNumber = modifiedPointsAdded[0];
+                if (smallestNumber < 0)
+                {
+                    modifiedPointsAdded[modifiedPointsAdded.Count - 1] = smallestNumber / 2;
+                }
+            }
+            else if (gift == "Jewelry")
+            { // x2 multiplier done
+                multiplier *= 2f;
+            }
+        }
+
+        return (int)(modifiedPointsAdded.Sum() * multiplier);
     }
 
     public void EndDate()
     {
+        NextDay();
         gameManager.ClearEvents();
         gameManager.AddPoints(currentPoints);
 
+        ClearGifts();
+
+        bool isEnding = gameManager.CheckEndingCondition();
+
+        if(isEnding)
+        {
+            if(gameManager.CheckWinningCondition())
+            {
+                sceneLoader.LoadScene("WinningScene");
+            }
+            else
+            {
+                sceneLoader.LoadScene("LosingScene");
+
+            }
+        }
+        else
+        {
+            sceneLoader.LoadScene("DatePlanning");
+        }
+    }
+
+    private void ClearGifts()
+    {
         gameManager.nextGifts.Clear();
         gameManager.chosenGifts.Clear();
         gameManager.giftsChosen = false;
@@ -133,6 +225,12 @@ public class LevelManager : MonoBehaviour
             list[r] = list[i];
             list[i] = t;
         }
+    }
+
+    // proceed to the next day
+    void NextDay()
+    {
+        gameManager.day++;
     }
 
 }

@@ -18,10 +18,12 @@ MonoBehaviour:
     you snoring and your date is staring at you with disgust from your drool all
     over her.
 
-    -7 love points
+    -5 love points
 
 '
   icon: {fileID: 21300000, guid: 323e4a35028b4664988e36cd03a7b1c2, type: 3}
-  picture: {fileID: -7728229299135676576, guid: 114f9f2c02e97894e95585eb68a99287, type: 3}
+  picture: {fileID: 21300000, guid: f3c373b94bd9e9148a33e0db76d79bbc, type: 3}
   zombieFace: {fileID: 21300000, guid: ce6a1181d6d0a9b46a137d10d3fac501, type: 3}
-  reward: -7
+  reward: -5
+  importantEvent: 0
+  dialogueFile: {fileID: 0}
