@@ -20,6 +20,8 @@ public class DialogueManager : MonoBehaviour
     [SerializeField] GameObject dialogueCanvas;
     [SerializeField] TextAnalyzer textAnalyzer;
 
+    [SerializeField] PictureHandler pictureHandler;
+
     public Queue<string> names = new Queue<string>();
     public Queue<string> dialogues = new Queue<string>();
     public bool finishedDialogue = false;
@@ -36,8 +38,7 @@ public class DialogueManager : MonoBehaviour
             }
         }
 
-        dialogueCanvas = GameObject.Find("Conv Canvas");
-
+        if (dialogueCanvas == null) dialogueCanvas = GameObject.Find("Conv Canvas");
 
         textAnalyzer = FindFirstObjectByType<TextAnalyzer>();
     }
@@ -76,10 +77,23 @@ public class DialogueManager : MonoBehaviour
         {
             if (nextName[0] == '@')
             {
-                FindObjectOfType<PictureHandler>().UpdatePortrait((int)Char.GetNumericValue(nextName[1]));
+                if (nextName[1] == 'L')
+                {
+                    pictureHandler.UpdatePortrait1((int)Char.GetNumericValue(nextName[2]));
+                }
+                else if (nextName[1] == 'R')
+                {
+                    pictureHandler.UpdatePortrait2((int)Char.GetNumericValue(nextName[2]));
+                }
+                else 
+                {
+                    // By default change the left picture
+                    pictureHandler.UpdatePortrait1((int)Char.GetNumericValue(nextName[2]));
+                }
                 nextName = names.Dequeue();
                 continue;
             }
+            
             if (nextName == "Animation")
             {
                 DisplayNextAnimation();
