@@ -9,6 +9,7 @@ public class GiftController : MonoBehaviour
     [SerializeField] private Image giftImage;
     [SerializeField] private TMP_Text giftText;
     [SerializeField] private TMP_Text giftPrice;
+    [SerializeField] private Gift currentGift;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -28,7 +29,29 @@ public class GiftController : MonoBehaviour
         giftPrice.text = "$ " + randomGift.price.ToString();
 
         Debug.Log("Gift drawn: " + giftDescription);
+        currentGift = randomGift;
 
+    }
+
+    public void GetGift()
+    {
+        if(GameManager.Instance.lovePoints >= currentGift.price)
+        {
+            GameManager.Instance.nextGifts.Add(currentGift);
+            GameManager.Instance.chosenGifts.Remove(currentGift);
+            GameManager.Instance.lovePoints -= currentGift.price;
+
+
+            giftDescription = " ";
+            giftText.text = " ";
+
+            giftImage.sprite = null;
+
+            giftPrice.text = " ";
+
+            currentGift = null;
+
+        }
     }
     // void DisplayDiscription();
 }
