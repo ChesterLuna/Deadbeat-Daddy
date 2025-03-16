@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Art
   m_EditorClassIdentifier: 
   giftDescription: Macaroni Art
-  icon: {fileID: 21300000, guid: 170cd52a437f987419e177147e6f3c2d, type: 3}
+  icon: {fileID: -2119982160086264770, guid: b5bd9619edc51714fb00a904962cc131, type: 3}
   price: 5

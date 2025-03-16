@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Poetry
   m_EditorClassIdentifier: 
   giftDescription: Poetry
-  icon: {fileID: 21300000, guid: 170cd52a437f987419e177147e6f3c2d, type: 3}
+  icon: {fileID: 868447564120828397, guid: 312296983077cdd498b9262d902f6e59, type: 3}
   price: 5
