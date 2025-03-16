@@ -9,6 +9,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] public int lovePoints = 10;
     [SerializeField] public int winCondition = 69;
     [SerializeField] bool endGame;
+    [SerializeField] public int multiplier = 1;
 
     [SerializeField] List<DateEvent> nextEvents= new List<DateEvent>();
 

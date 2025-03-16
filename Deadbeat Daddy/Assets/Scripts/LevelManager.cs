@@ -45,6 +45,16 @@ public class LevelManager : MonoBehaviour
         cardSpawner = FindFirstObjectByType<CardSpawner>();
         cardSpawner.SpawnCards(events.Count());
     }
+    void Update()
+    {
+        // TODO change it to only run when changed.
+        UpdateScore();
+    }
+
+    private void UpdateScore()
+    {
+        scoreText.text = GetCurrentPoints().ToString();
+    }
 
     public void DrawEvent()
     {
@@ -71,6 +81,11 @@ public class LevelManager : MonoBehaviour
     {
         currentPoints += nextEvent.reward;
 
+    }
+
+    public int GetCurrentPoints()
+    {
+        return currentPoints * gameManager.multiplier;
     }
 
     public void EndDate()
