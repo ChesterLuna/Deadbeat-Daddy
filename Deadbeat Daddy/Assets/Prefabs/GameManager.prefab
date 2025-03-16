@@ -44,13 +44,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee81afd316d98a240ad273c5da62c156, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lovePoints: 10
+  lovePoints: 20
   winThreshold: 69
   loseThreshold: 5
   endGame: 0
   multiplier: 1
-  day: 1
-  maximumDays: 5
   starEvents:
   - {fileID: 11400000, guid: 5b49d352b5f4ff546a8ae3505f1662e3, type: 2}
   - {fileID: 11400000, guid: dace8ddea4285b146afa89ca774d6881, type: 2}

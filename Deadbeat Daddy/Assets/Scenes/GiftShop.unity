@@ -1465,6 +1465,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: GiftCanvas
       objectReference: {fileID: 0}
+    - target: {fileID: 6654499759118852804, guid: d7619323de33ffb4c8584943db1634be, type: 3}
+      propertyPath: m_text
+      value: ' '
+      objectReference: {fileID: 0}
     - target: {fileID: 7035592771409001183, guid: d7619323de33ffb4c8584943db1634be, type: 3}
       propertyPath: m_Sprite
       value: 

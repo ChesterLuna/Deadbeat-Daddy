@@ -17,7 +17,7 @@ MonoBehaviour:
     growl. You look at her in embarrassment, yet she found it charming \r\n+2 love
     points\r\n"
   icon: {fileID: 21300000, guid: 2edfd6cc2591c8846982a3efa8c428e4, type: 3}
-  picture: {fileID: 21300000, guid: dac9e80da9381264f9b8e807f0e9e60f, type: 3}
+  picture: {fileID: 0}
   zombieFace: {fileID: 21300000, guid: f947a54b00e55d64a915e2d444a31c52, type: 3}
   reward: 2
   importantEvent: 0
