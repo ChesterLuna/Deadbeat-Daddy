@@ -5,10 +5,10 @@ using UnityEngine.UI;
 
 public class GiftController : MonoBehaviour
 {   
-    private string giftDescription;
-    private Image giftImage;
-    private TMP_Text giftText;
-    private TMP_Text giftPrice;
+    [SerializeField] private string giftDescription;
+    [SerializeField] private Image giftImage;
+    [SerializeField] private TMP_Text giftText;
+    [SerializeField] private TMP_Text giftPrice;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
