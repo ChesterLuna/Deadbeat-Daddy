@@ -5,13 +5,19 @@ using UnityEngine.UI;
 
 public class PictureHandler : MonoBehaviour
 {
-    [SerializeField] Sprite[] characterPortraits;
+    [SerializeField] Sprite[] character1Portraits;
     //[SerializeField] GameObject[] portraitStands;
-    [SerializeField] GameObject portraitStand;
+    [SerializeField] GameObject portrait1Stand;
 
-    [SerializeField] GameObject pictureDisplayed;
-    [SerializeField] bool pictureShown = false;
+    [SerializeField] GameObject picture1Displayed;
+    [SerializeField] bool picture1Shown = false;
 
+    [SerializeField] Sprite[] character2Portraits;
+    //[SerializeField] GameObject[] portraitStands;
+    [SerializeField] GameObject portrait2Stand;
+
+    [SerializeField] GameObject picture2Displayed;
+    [SerializeField] bool picture2Shown = false;
 
     public void UpdatePortrait(int index)
     {
@@ -19,23 +25,24 @@ public class PictureHandler : MonoBehaviour
         // Debug.Log(index);
         // Debug.Log(characterPortraits.Length);
 
-        portraitStand.GetComponent<Image>().sprite = characterPortraits[index];
+        portrait1Stand.GetComponent<Image>().sprite = character1Portraits[index];
+        portrait2Stand.GetComponent<Image>().sprite = character2Portraits[index];
     }
 
-    public void DisplayPicture()
-    {
-        if (pictureShown == false)
-        {
-            pictureDisplayed.SetActive(true);
-            pictureShown = true;
-            return;
-        }
-        if (pictureShown == true)
-        {
-            pictureDisplayed.SetActive(false);
-            pictureShown = false;
-            return;
-        }
-    }
+    // public void DisplayPicture()
+    // {
+    //     if (pictureShown == false)
+    //     {
+    //         pictureDisplayed.SetActive(true);
+    //         pictureShown = true;
+    //         return;
+    //     }
+    //     if (pictureShown == true)
+    //     {
+    //         pictureDisplayed.SetActive(false);
+    //         pictureShown = false;
+    //         return;
+    //     }
+    // }
 
 }
