@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72ac17940fdf3264bb1215a5d108da21, type: 3}
+  m_Name: BowlingEvent
+  m_EditorClassIdentifier: 
+  eventName: Where did the ball go?
+  description: "You and your date wanted to try bowling. You go on to pick up the
+    bowling ball, walk up towards your lane, assume bowling position\u2026\r\nAs
+    you swing your bowling arm back, your rotting arm loses its integrity and snaps
+    off with the bowling ball, flying towards your date.\r\nThat\u2019s gotta hurt\r\n-7
+    love points\r\n"
+  icon: {fileID: 0}
+  picture: {fileID: 0}
+  zombieFace: {fileID: 0}
+  reward: -7

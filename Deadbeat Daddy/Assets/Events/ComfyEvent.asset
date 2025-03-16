@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72ac17940fdf3264bb1215a5d108da21, type: 3}
+  m_Name: ComfyEvent
+  m_EditorClassIdentifier: 
+  eventName: Too Comfy
+  description: 'You cuddle in close while watching her favorite movie. It is so comfy
+    and warm next to her, you end up falling asleep. You wake up from the sound of
+    you snoring and your date is staring at you with disgust from your drool all
+    over her.
+
+    -7 love points
+
+'
+  icon: {fileID: 0}
+  picture: {fileID: 0}
+  zombieFace: {fileID: 0}
+  reward: -7
