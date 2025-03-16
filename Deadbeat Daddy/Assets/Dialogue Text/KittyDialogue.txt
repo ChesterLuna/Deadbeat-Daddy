@@ -5,11 +5,11 @@
 
 @L1
 #Daddy
-:I’m worried the kitties aren’t going to like me
+:I'm worried the kitties aren't going to like me
 
 @R1
 #Max
-:It’s ok! They usually like to keep their distance and will go to youIt’s ok! They usually like to keep their distance and will go to you
+:It's ok! They usually like to keep their distance and will go to youIt's ok! They usually like to keep their distance and will go to you
 
 @L1
 #Daddy
@@ -49,4 +49,4 @@
 @R1
 @L1
 # 
-:Max scooches in close and pets the cats while leaning onto you
+:Max scooches in close and pets the cats while leaning onto you. +8 love points

@@ -1,7 +1,7 @@
 @R1
 @L1
 # 
-:You and your date go to yoru city's annual haunted house
+:You and your date go to your city's annual haunted house
 
 @L1
 #Daddy
@@ -9,11 +9,11 @@
 
 @R1
 #Max
-:I’m not sure, I’ve never been in one before so I don’t know what to expect.
+:I'm not sure, I've never been in one before so I don't know what to expect.
 
 @L2
 #Daddy
-:Don’t worry I’ll protect you no matter what comes our way!
+:Don't worry I'll protect you no matter what comes our way!
 
 @R1
 @L1
@@ -22,7 +22,7 @@
 
 @L1
 #Daddy (to self)
-:Hmm I don’t see many scare actors
+:Hmm I don't see many scare actors
 
 @R1
 @L1
@@ -51,9 +51,9 @@
 
 @R1
 #Max
-:Don’t worry you don’t scare me. You’re all mine
+:Don't worry you don't scare me. You're all mine
 
 @R1
 @L1
 # 
-:You both continue strolling along the house while the actors meakly pop up every so often
+:You both continue strolling along the house while the actors meekly pop up every so often. +8 love points
