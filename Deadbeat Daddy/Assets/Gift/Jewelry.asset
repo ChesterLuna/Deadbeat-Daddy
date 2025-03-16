@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a055466acb7c2e41ad22ce78fea4f2d, type: 3}
   m_Name: Jewelry
   m_EditorClassIdentifier: 
-  giftDescription: Jewelry
+  giftDescription: Jewelry (2x Multiplier)
   icon: {fileID: 21300000, guid: e6e15bd1decd1b34ba18af0033e02167, type: 3}
   price: 50

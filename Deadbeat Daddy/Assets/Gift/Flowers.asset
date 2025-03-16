@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a055466acb7c2e41ad22ce78fea4f2d, type: 3}
   m_Name: Flowers
   m_EditorClassIdentifier: 
-  giftDescription: Flowers
+  giftDescription: Flowers (Remove Highest Negative Card)
   icon: {fileID: 21300000, guid: 257f9a00fccc8d441aac7fc7c97f8abf, type: 3}
   price: 15
