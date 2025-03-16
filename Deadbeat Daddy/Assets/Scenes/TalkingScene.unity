@@ -1022,17 +1022,6 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 744331206932222627, guid: c1b4a15556034e2408508dfa46833fd4, type: 3}
   m_PrefabInstance: {fileID: 2941781864618241573}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1875954163 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 6582463570593027932, guid: c1b4a15556034e2408508dfa46833fd4, type: 3}
-  m_PrefabInstance: {fileID: 2941781864618241573}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4ee3d85a5b92e99479062c4cbb5775a4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1921370420 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 5508563388771904437, guid: c1b4a15556034e2408508dfa46833fd4, type: 3}
@@ -1216,12 +1205,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6334426525735436487, guid: 8d57564c01316de4ebe890575e5ef26c, type: 3}
       propertyPath: nextEvents.Array.size
-      value: 6
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6334426525735436487, guid: 8d57564c01316de4ebe890575e5ef26c, type: 3}
       propertyPath: 'nextEvents.Array.data[0]'
       value: 
-      objectReference: {fileID: 11400000, guid: dafc960df33ea5143b2068477a0e1407, type: 2}
+      objectReference: {fileID: 11400000, guid: 610268d0d6a8a7740ace4f3b90170b1b, type: 2}
     - target: {fileID: 6334426525735436487, guid: 8d57564c01316de4ebe890575e5ef26c, type: 3}
       propertyPath: 'nextEvents.Array.data[1]'
       value: 
@@ -1406,7 +1395,7 @@ PrefabInstance:
     - target: {fileID: 6302210257018423928, guid: c1b4a15556034e2408508dfa46833fd4, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Target
       value: 
-      objectReference: {fileID: 1875954163}
+      objectReference: {fileID: 0}
     - target: {fileID: 6302210257018423928, guid: c1b4a15556034e2408508dfa46833fd4, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_CallState
       value: 2
