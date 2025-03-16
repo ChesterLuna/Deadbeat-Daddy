@@ -45,9 +45,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lovePoints: 10
-  winCondition: 69
+  winThreshold: 69
+  loseThreshold: 5
   endGame: 0
   multiplier: 1
+  day: 1
+  maximumDays: 5
   starEvents:
   - {fileID: 11400000, guid: 5b49d352b5f4ff546a8ae3505f1662e3, type: 2}
   - {fileID: 11400000, guid: dace8ddea4285b146afa89ca774d6881, type: 2}
@@ -57,8 +60,14 @@ MonoBehaviour:
   sunEvents:
   - {fileID: 11400000, guid: 5b49d352b5f4ff546a8ae3505f1662e3, type: 2}
   - {fileID: 11400000, guid: dace8ddea4285b146afa89ca774d6881, type: 2}
-  nextEvents: []
+  nextEvents:
+  - {fileID: 11400000, guid: dafc960df33ea5143b2068477a0e1407, type: 2}
+  - {fileID: 11400000, guid: 6549137d00b77ba4b9077b9546c8c798, type: 2}
+  - {fileID: 11400000, guid: 58e4bce68082bf3448f878a42d90e368, type: 2}
   gifts:
   - {fileID: 11400000, guid: e1d0a193c3e01464eb9939b6d5acd0c5, type: 2}
   - {fileID: 11400000, guid: 3a9948e659be6c643ab6905f09313e36, type: 2}
   - {fileID: 11400000, guid: 93e4f9e0a7e10da4cbb8d14addddb70c, type: 2}
+  giftsChosen: 0
+  chosenGifts: []
+  nextGifts: []
