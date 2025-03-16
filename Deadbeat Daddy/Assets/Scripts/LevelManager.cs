@@ -120,15 +120,63 @@ public class LevelManager : MonoBehaviour
 
     }
 
+
     public int GetCurrentPoints()
     {
-        currentPoints = 0;
-        foreach (int value in pointsAdded)
+        float multiplier = 1;
+        List<int> modifiedPointsAdded = new List<int>(pointsAdded); // pointsAdded is a list of each card's reward
+        modifiedPointsAdded.Sort();
+
+        foreach (Gift thegift in gameManager.chosenGifts)
         {
-            currentPoints += value;
+            string gift = thegift.name;
+            if (gift == "Flowers") // remove highest negative card done
+            {
+                int smallestNumber = modifiedPointsAdded[0];
+                if (smallestNumber < 0)
+                {
+                    modifiedPointsAdded.RemoveAt(0);
+                }
+            }
+            else if (gift == "Chocolate") // 1.5x multiplier done
+            {
+                multiplier *= 1.5f;
+            }
+            else if (gift == "Food") //multiply top card by 2
+            {
+                int biggestNumber = modifiedPointsAdded[modifiedPointsAdded.Count - 1];
+                if (biggestNumber > 0)
+                {
+                    modifiedPointsAdded[modifiedPointsAdded.Count - 1] = biggestNumber * 2;
+                }
+            }
+            else if (gift == "Macaroni") //remove lowest neg card /////
+            {
+                for (int i = modifiedPointsAdded.Count; i >= modifiedPointsAdded.Count; i--)
+                {
+                    int currentReward = modifiedPointsAdded[i];
+                    if (currentReward < 0)
+                    {
+                        modifiedPointsAdded.RemoveAt(i);
+                        break;
+                    }
+                }
+            }
+            else if (gift == "Poetry")
+            { // divides highestneg card by 2 done
+                int smallestNumber = modifiedPointsAdded[0];
+                if (smallestNumber < 0)
+                {
+                    modifiedPointsAdded[modifiedPointsAdded.Count - 1] = smallestNumber / 2;
+                }
+            }
+            else if (gift == "Jewelry")
+            { // x2 multiplier done
+                multiplier *= 2f;
+            }
         }
-        currentPoints *= gameManager.multiplier;
-        return currentPoints;
+
+        return (int)(modifiedPointsAdded.Sum() * multiplier);
     }
 
     public void EndDate()
