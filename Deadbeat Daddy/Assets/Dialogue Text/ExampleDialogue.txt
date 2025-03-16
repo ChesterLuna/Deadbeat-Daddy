@@ -1,0 +1,24 @@
+@L1
+#Daddy 
+:The first dialogue helloo.
+
+@R4
+#Max 
+:The @ on top means the picture you want to use. The letter "R" The number is which asset.
+
+@R4
+#Max 
+:The letter "R" means that you want to change the Right portrait.
+
+@L0
+#Max 
+:The letter "L" means that you want to change the Left portrait.
+
+@L2
+#Max 
+:The number is which picture you want to change it to.
+
+
+@R0
+#Daddy 
+:A 0 makes the picture transparent.

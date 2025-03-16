@@ -10,4 +10,6 @@ public class DateEvent : ScriptableObject
     [SerializeField] public Sprite picture;
     [SerializeField] public Sprite zombieFace;
     [SerializeField] public int reward;
+    [SerializeField] public bool importantEvent = false;
+    [SerializeField] public TextAsset dialogueFile;
 }
