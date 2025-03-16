@@ -10,6 +10,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] public int winCondition = 69;
     [SerializeField] bool endGame;
     [SerializeField] public int multiplier = 1;
+    [SerializeField] public int day = 1;
 
     [SerializeField] public List<DateEvent> starEvents= new List<DateEvent>();
     [SerializeField] public List<DateEvent> moonEvents= new List<DateEvent>();
