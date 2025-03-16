@@ -43,7 +43,7 @@ public class LevelManager : MonoBehaviour
         if (zombieFace == null) zombieFace = GameObject.Find("Zombie Face").GetComponent<Image>();
         if (dateDescription == null) dateDescription = GameObject.Find("Date Text").GetComponent<TMP_Text>();
         if (endButton == null) endButton = GameObject.Find("Stop Button").GetComponent<Button>();
-        if (scoreText == null) scoreText = GameObject.Find("Score").GetComponent<TMP_Text>();
+        if (scoreText == null) scoreText = GameObject.Find("Score").transform.GetChild(0).GetComponent<TMP_Text>();
         if (dialogueManager == null) dialogueManager = FindFirstObjectByType<DialogueManager>();
 
         cardSpawner = FindFirstObjectByType<CardSpawner>();
@@ -129,6 +129,12 @@ public class LevelManager : MonoBehaviour
             list[r] = list[i];
             list[i] = t;
         }
+    }
+
+    // proceed to the next day
+    public void NextDay()
+    {
+        gameManager.day++;
     }
 
 }
