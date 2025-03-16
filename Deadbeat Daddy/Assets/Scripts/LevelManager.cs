@@ -24,6 +24,8 @@ public class LevelManager : MonoBehaviour
 
     [SerializeField] CardSpawner cardSpawner = null;
 
+    [SerializeField] DialogueManager dialogueManager = null;
+
     void Start()
     {
         gameManager = GameManager.Instance;
@@ -41,6 +43,7 @@ public class LevelManager : MonoBehaviour
         if (dateDescription == null) dateDescription = GameObject.Find("Date Text").GetComponent<TMP_Text>();
         if (endButton == null) endButton = GameObject.Find("Stop Button").GetComponent<Button>();
         if (scoreText == null) scoreText = GameObject.Find("Score").GetComponent<TMP_Text>();
+        if (dialogueManager == null) dialogueManager = FindFirstObjectByType<DialogueManager>();
 
         cardSpawner = FindFirstObjectByType<CardSpawner>();
         cardSpawner.SpawnCards(events.Count());
@@ -74,6 +77,10 @@ public class LevelManager : MonoBehaviour
         //Change text
         dateDescription.text = nextEvent.description;
         //Add Points
+        if(nextEvent.importantEvent)
+        {
+
+        }
         AddCurrentPoints(nextEvent);
     }
 
