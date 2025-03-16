@@ -12,6 +12,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] public int multiplier = 1;
 
     [SerializeField] List<DateEvent> nextEvents= new List<DateEvent>();
+    [SerializeField] public List<Gift> gifts = new List<Gift>();
 
     private void Awake()
     {
