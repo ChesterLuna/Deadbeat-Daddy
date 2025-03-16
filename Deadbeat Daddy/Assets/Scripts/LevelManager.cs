@@ -10,6 +10,7 @@ public class LevelManager : MonoBehaviour
     [SerializeField] int currentPoints = 0;
     GameManager gameManager = null;
     [SerializeField] Queue<DateEvent> eventsToPlay = new Queue<DateEvent>();
+    [SerializeField] DateEvent defaultEvent;
 
 
     [Header("References")]
@@ -23,6 +24,8 @@ public class LevelManager : MonoBehaviour
     [SerializeField] TMP_Text scoreText = null;
 
     [SerializeField] CardSpawner cardSpawner = null;
+
+    [SerializeField] DialogueManager dialogueManager = null;
 
     void Start()
     {
@@ -41,6 +44,7 @@ public class LevelManager : MonoBehaviour
         if (dateDescription == null) dateDescription = GameObject.Find("Date Text").GetComponent<TMP_Text>();
         if (endButton == null) endButton = GameObject.Find("Stop Button").GetComponent<Button>();
         if (scoreText == null) scoreText = GameObject.Find("Score").GetComponent<TMP_Text>();
+        if (dialogueManager == null) dialogueManager = FindFirstObjectByType<DialogueManager>();
 
         cardSpawner = FindFirstObjectByType<CardSpawner>();
         cardSpawner.SpawnCards(events.Count());
@@ -73,6 +77,26 @@ public class LevelManager : MonoBehaviour
         cardImage.sprite = nextEvent.icon;
         //Change text
         dateDescription.text = nextEvent.description;
+        //Add Points
+        if(nextEvent.importantEvent && nextEvent.dialogueFile != null)
+        {
+            dialogueManager.StartDialogue(nextEvent.dialogueFile.ToString());
+            //Show Card, display assets
+            dateImage.sprite = defaultEvent.picture;
+            zombieFace.sprite = defaultEvent.zombieFace;
+            cardImage.sprite = defaultEvent.icon;
+            //Change text
+            dateDescription.text = defaultEvent.description;
+        }
+        else
+        {
+            //Show Card, display assets
+            dateImage.sprite = nextEvent.picture;
+            zombieFace.sprite = nextEvent.zombieFace;
+            cardImage.sprite = nextEvent.icon;
+            //Change text
+            dateDescription.text = nextEvent.description;
+        }
         //Add Points
         AddCurrentPoints(nextEvent);
     }
