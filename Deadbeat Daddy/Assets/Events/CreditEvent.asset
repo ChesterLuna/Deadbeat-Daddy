@@ -17,6 +17,6 @@ MonoBehaviour:
     declining. Guess undead credit doesn\u2019t work the same way in the living world.
     Your date shyly pulls out their wallet.\r\n-8 love points."
   icon: {fileID: 21300000, guid: 323e4a35028b4664988e36cd03a7b1c2, type: 3}
-  picture: {fileID: -516963828392432434, guid: 8962be2174e285f428cdb0caa4552be0, type: 3}
+  picture: {fileID: 21300000, guid: e69e641173ad2b24eb902d05de9d17b5, type: 3}
   zombieFace: {fileID: 21300000, guid: 8939d0743039d3840aa3961c0e16f4ab, type: 3}
   reward: -8

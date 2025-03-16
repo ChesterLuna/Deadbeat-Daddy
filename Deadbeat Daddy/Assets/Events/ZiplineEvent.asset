@@ -16,6 +16,6 @@ MonoBehaviour:
   description: "You ride the zipline. It is so fun that you can\u2019t stop doing
     it!\r\nYour girlfriend has been waiting for 1 hour\u2026\r\n-5 love points\r\n"
   icon: {fileID: 21300000, guid: 323e4a35028b4664988e36cd03a7b1c2, type: 3}
-  picture: {fileID: 0}
+  picture: {fileID: 7397601439941983773, guid: a032d82b614b24e4384208d21f49cdef, type: 3}
   zombieFace: {fileID: 21300000, guid: ce6a1181d6d0a9b46a137d10d3fac501, type: 3}
   reward: -5
