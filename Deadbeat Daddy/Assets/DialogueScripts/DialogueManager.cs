@@ -17,6 +17,7 @@ public class DialogueManager : MonoBehaviour
     [SerializeField] TextMeshProUGUI dialogueText;
     int animationsDone = 0;
     [SerializeField] GameObject fader;
+    [SerializeField] int fadeDuration = 1;
     [SerializeField] GameObject dialogueCanvas;
     [SerializeField] TextAnalyzer textAnalyzer;
 
@@ -45,7 +46,12 @@ public class DialogueManager : MonoBehaviour
 
     public void StartDialogue(string text)
     {
-        dialogueCanvas.SetActive(true);
+        //         fader.GetComponent<Image>().color =
+        // new Color(fader.GetComponent<Image>().color.r, fader.GetComponent<Image>().color.g, fader.GetComponent<Image>().color.b, 0);
+
+        // StartCoroutine(StartFadeIn(fader, fadeDuration, 255));
+        names.Clear();
+        dialogues.Clear();
 
         textAnalyzer.AnalyzeText(text);
 
@@ -55,6 +61,8 @@ public class DialogueManager : MonoBehaviour
 
             DisplayNextSentence();
         }
+        dialogueCanvas.SetActive(true);
+
     }
 
     public void DisplayNextSentence()
@@ -141,10 +149,30 @@ public class DialogueManager : MonoBehaviour
     {
 
         // string neutralNameScene = SceneManager.GetActiveScene().name;
+        // StartCoroutine(StartFadeOut(fader, fadeDuration, 1));
 
         dialogueCanvas.SetActive(false);
 
+
     }
+
+    public static IEnumerator StartFadeIn(GameObject fader, float duration, float alpha)
+    {
+        float currentTime = 0;
+        float currentAlpha = fader.GetComponent<Image>().color.a;
+        float targetValue = Mathf.Clamp(alpha, 0.0001f, 1f);
+        while (currentTime < duration)
+        {
+            currentTime += Time.deltaTime;
+
+            float newAlpha = Mathf.Lerp(currentAlpha, targetValue, currentTime / duration);
+            fader.GetComponent<Image>().color =
+            new Color(fader.GetComponent<Image>().color.r, fader.GetComponent<Image>().color.g, fader.GetComponent<Image>().color.b, newAlpha);
+            yield return null;
+        }
+        yield break;
+    }
+
 
     public static IEnumerator StartFadeOut(GameObject fader, float duration, float alpha)
     {

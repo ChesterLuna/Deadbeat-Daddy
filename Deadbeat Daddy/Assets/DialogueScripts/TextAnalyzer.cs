@@ -7,7 +7,6 @@ using UnityEngine.UI;
 public class TextAnalyzer : MonoBehaviour
 {
 
-    int i = 0;
 
     DialogueManager manager;
     string[] lines;
@@ -19,6 +18,8 @@ public class TextAnalyzer : MonoBehaviour
 
     public void AnalyzeText(string txt)
     {
+        int i = 0;
+
         lines = txt.Split(System.Environment.NewLine.ToCharArray());
 
         while (i < lines.Length)
