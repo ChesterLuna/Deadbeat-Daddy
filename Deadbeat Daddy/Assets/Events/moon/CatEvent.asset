@@ -30,3 +30,5 @@ MonoBehaviour:
   picture: {fileID: 0}
   zombieFace: {fileID: 21300000, guid: 96c61897709421149a2f0a11dc3c8edf, type: 3}
   reward: 8
+  importantEvent: 0
+  dialogueFile: {fileID: 0}

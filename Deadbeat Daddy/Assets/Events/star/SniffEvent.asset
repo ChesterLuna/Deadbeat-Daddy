@@ -16,8 +16,10 @@ MonoBehaviour:
   description: "You go in for a hug and as your date comes in close, you get a whiff
     of her hair. It smells like\u2026 strawberries? You can\u2019t resist the intrusive
     thoughts and start nibbling on her head. \r\nShe pushes you in shock. Not good
-    for your image\r\n-5 love points\r\n"
-  icon: {fileID: 21300000, guid: 323e4a35028b4664988e36cd03a7b1c2, type: 3}
+    for your image\r\n-2 love points\r\n"
+  icon: {fileID: 21300000, guid: 2edfd6cc2591c8846982a3efa8c428e4, type: 3}
   picture: {fileID: 21300000, guid: 160c2aa58e2877d469eba199c9f7b966, type: 3}
   zombieFace: {fileID: 21300000, guid: 429fbbd3b2b261846bddb2e58e930659, type: 3}
-  reward: -3
+  reward: -2
+  importantEvent: 0
+  dialogueFile: {fileID: 0}

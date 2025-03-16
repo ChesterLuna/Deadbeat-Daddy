@@ -44,10 +44,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee81afd316d98a240ad273c5da62c156, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lovePoints: 10
+  lovePoints: 20
   winCondition: 69
   endGame: 0
   multiplier: 1
+  day: 1
   starEvents:
   - {fileID: 11400000, guid: 5b49d352b5f4ff546a8ae3505f1662e3, type: 2}
   - {fileID: 11400000, guid: dace8ddea4285b146afa89ca774d6881, type: 2}
@@ -62,3 +63,6 @@ MonoBehaviour:
   - {fileID: 11400000, guid: e1d0a193c3e01464eb9939b6d5acd0c5, type: 2}
   - {fileID: 11400000, guid: 3a9948e659be6c643ab6905f09313e36, type: 2}
   - {fileID: 11400000, guid: 93e4f9e0a7e10da4cbb8d14addddb70c, type: 2}
+  giftsChosen: 0
+  chosenGifts: []
+  nextGifts: []

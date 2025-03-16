@@ -213,7 +213,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4453609201987788779, guid: d7619323de33ffb4c8584943db1634be, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
-      value: GiftShop
+      value: DatePlanning
       objectReference: {fileID: 0}
     - target: {fileID: 4453609201987788779, guid: d7619323de33ffb4c8584943db1634be, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
