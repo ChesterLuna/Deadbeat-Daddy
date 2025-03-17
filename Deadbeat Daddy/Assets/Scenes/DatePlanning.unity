@@ -396,7 +396,7 @@ PrefabInstance:
       objectReference: {fileID: 11400000, guid: 07566f1b6e6ce584983993609a74c824, type: 2}
     - target: {fileID: 6334426525735436487, guid: 8d57564c01316de4ebe890575e5ef26c, type: 3}
       propertyPath: sunEvents.Array.size
-      value: 6
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 6334426525735436487, guid: 8d57564c01316de4ebe890575e5ef26c, type: 3}
       propertyPath: moonEvents.Array.size
