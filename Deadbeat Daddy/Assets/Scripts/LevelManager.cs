@@ -180,9 +180,6 @@ public class LevelManager : MonoBehaviour
             }
         }
 
-        print(multiplier);
-        print(modifiedPointsAdded.Sum() * multiplier);
-
         return (int)(modifiedPointsAdded.Sum() * multiplier);
     }
 
