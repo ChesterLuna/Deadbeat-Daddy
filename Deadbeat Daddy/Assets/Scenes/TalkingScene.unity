@@ -926,17 +926,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e9cc6a7e8d0bef546bff62e8355c1f47, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &1440025286 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 6302210257018423928, guid: c1b4a15556034e2408508dfa46833fd4, type: 3}
-  m_PrefabInstance: {fileID: 2941781864618241573}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1485636458 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3857634537103362833, guid: 312fcd3b8dbb5b145a23a9448bd30a73, type: 3}
@@ -1440,6 +1429,14 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 7445167422702258944, guid: c1b4a15556034e2408508dfa46833fd4, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 6480e8379f948914e949c8b0e7d0ea3c, type: 3}
+    - target: {fileID: 7445167422702258944, guid: c1b4a15556034e2408508dfa46833fd4, type: 3}
+      propertyPath: m_PreserveAspect
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 5056853739499676686, guid: c1b4a15556034e2408508dfa46833fd4, type: 3}
@@ -1508,7 +1505,7 @@ PrefabInstance:
     - target: {fileID: 8060840309215508058, guid: 80311b005ba7be541862f27cee25b323, type: 3}
       propertyPath: endButton
       value: 
-      objectReference: {fileID: 1440025286}
+      objectReference: {fileID: 0}
     - target: {fileID: 8060840309215508058, guid: 80311b005ba7be541862f27cee25b323, type: 3}
       propertyPath: scoreText
       value: 
