@@ -124,10 +124,14 @@ public class LevelManager : MonoBehaviour
     public int GetCurrentPoints()
     {
         float multiplier = 1;
+        if(pointsAdded.Count == 0)
+        {
+            return 0;
+        }
         List<int> modifiedPointsAdded = new List<int>(pointsAdded); // pointsAdded is a list of each card's reward
         modifiedPointsAdded.Sort();
 
-        foreach (Gift thegift in gameManager.chosenGifts)
+        foreach (Gift thegift in gameManager.nextGifts)
         {
             string gift = thegift.name;
             if (gift == "Flowers") // remove highest negative card done
@@ -175,6 +179,9 @@ public class LevelManager : MonoBehaviour
                 multiplier *= 2f;
             }
         }
+
+        print(multiplier);
+        print(modifiedPointsAdded.Sum() * multiplier);
 
         return (int)(modifiedPointsAdded.Sum() * multiplier);
     }
