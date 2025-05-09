@@ -15,6 +15,11 @@ public class PlanningManager : MonoBehaviour
     [SerializeField] Sprite moonSprite;
     [SerializeField] Sprite sunSprite;
 
+    [Header("GameObjects")]
+    [SerializeField] GameObject starObject;
+    [SerializeField] GameObject moonObject;
+    [SerializeField] GameObject sunObject;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -30,7 +35,7 @@ public class PlanningManager : MonoBehaviour
         // Re add all events
         foreach (var dateEvent in gameManager.GetEvents())
         {
-            cardSlotManager.PlaceInNextSlot(dateEvent.icon);
+            cardSlotManager.PlaceInNextSlot(dateEvent.icon, hasAnimation: false);
             dateButton.interactable = true;
 
         }
@@ -39,6 +44,7 @@ public class PlanningManager : MonoBehaviour
     public void BuyCard(string type)
     {
         int price = 0;
+        Debug.Log(transform.position);
         switch (type)
         {
             case "star":
@@ -73,13 +79,13 @@ public class PlanningManager : MonoBehaviour
         switch (type)
         {
             case "star":
-                cardSlotManager.PlaceInNextSlot(starSprite);
+                cardSlotManager.PlaceInNextSlot(starSprite, starObject.transform);
                 break;
             case "moon":
-                cardSlotManager.PlaceInNextSlot(moonSprite);
+                cardSlotManager.PlaceInNextSlot(moonSprite, moonObject.transform);
                 break;
             case "sun":
-                cardSlotManager.PlaceInNextSlot(sunSprite);
+                cardSlotManager.PlaceInNextSlot(sunSprite, sunObject.transform);
                 break;
             default:
                 cardSlotManager.PlaceInNextSlot(starSprite);

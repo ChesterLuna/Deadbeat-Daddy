@@ -555,9 +555,21 @@ PrefabInstance:
       value: PlanningManager
       objectReference: {fileID: 0}
     - target: {fileID: 5111438587114978033, guid: a04907f55bf63dd41b418c27d1495cca, type: 3}
+      propertyPath: sunObject
+      value: 
+      objectReference: {fileID: 1772035948}
+    - target: {fileID: 5111438587114978033, guid: a04907f55bf63dd41b418c27d1495cca, type: 3}
       propertyPath: dateButton
       value: 
       objectReference: {fileID: 8426369801034125074}
+    - target: {fileID: 5111438587114978033, guid: a04907f55bf63dd41b418c27d1495cca, type: 3}
+      propertyPath: moonObject
+      value: 
+      objectReference: {fileID: 2125302387}
+    - target: {fileID: 5111438587114978033, guid: a04907f55bf63dd41b418c27d1495cca, type: 3}
+      propertyPath: starObject
+      value: 
+      objectReference: {fileID: 8426369801034125077}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1341,6 +1353,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8008495096951617242, guid: b1bb7b7cfa6389346b6171bf615eb3ec, type: 3}
+      propertyPath: cardPrefab
+      value: 
+      objectReference: {fileID: 8842043771135350150, guid: 4c44f8ea07e83754fb066f4ca9e0d91e, type: 3}
     - target: {fileID: 8516394947028452050, guid: b1bb7b7cfa6389346b6171bf615eb3ec, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
