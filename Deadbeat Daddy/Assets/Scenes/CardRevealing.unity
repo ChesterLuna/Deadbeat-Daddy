@@ -801,6 +801,14 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 2089465489}
+    - target: {fileID: 6548886594439159644, guid: c1b4a15556034e2408508dfa46833fd4, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 2089465489}
+    - target: {fileID: 6548886594439159644, guid: c1b4a15556034e2408508dfa46833fd4, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: EndDate
+      objectReference: {fileID: 0}
     - target: {fileID: 8614109724930845796, guid: c1b4a15556034e2408508dfa46833fd4, type: 3}
       propertyPath: m_Name
       value: End Button
